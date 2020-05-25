@@ -1,0 +1,2 @@
+rootProject.name='PCPartSoftware'
+include ':app'

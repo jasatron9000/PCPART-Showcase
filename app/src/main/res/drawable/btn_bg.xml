@@ -4,6 +4,7 @@
         <shape>
             <solid android:color="@color/colorText"/>
             <corners android:radius="20dp"/>
+            <size android:width="20dp"/>
         </shape>
     </item>
 
@@ -11,6 +12,7 @@
         <shape>
             <solid android:color="@color/colorAccent"/>
             <corners android:radius="20dp"/>
+            <size android:width="20dp"/>
         </shape>
     </item>
 </selector>

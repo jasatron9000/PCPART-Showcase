@@ -2,4 +2,6 @@
     <string name="app_name">PCPartSoftware</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="itemTitle"><font color="#80FAFBFB">Categories</font></string>
+    <string name="top_picks">Top Picks</string>
 </resources>

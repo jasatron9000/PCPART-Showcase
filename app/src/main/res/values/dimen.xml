@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="loginInPadding">50sp</dimen>
+    <dimen name="loginLogo">50sp</dimen>
+    <dimen name="loginSpace">15sp</dimen>
+    <dimen name="loginButton">20sp</dimen>
+
+    <dimen name="H1"></dimen>
+
+</resources>

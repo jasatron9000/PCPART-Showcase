@@ -45,9 +45,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navView = (NavigationView) findViewById(R.id.nav_bar);
         recyclerView = findViewById(R.id.recycler_view);
         mainModels = new ArrayList<>();
-        //imageButton = (Button) findViewById(R.id.text_viewer);
 
-        //Create int array for recycler
+        //Create img array for recycler
         Integer[] imageNums = {R.drawable.geforce, R.drawable.gigabyte, R.drawable.i9,
                 R.drawable.radeon, R.drawable.threadripper, R.drawable.titanrtx};
 
@@ -55,9 +54,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         String[] imageNames = {"NVIDIA GeForce", "NVIDIA GIGABYTE", "Intel Core i9",
                 "AMD Radeon", "AMD ThreadRipper", "Titan RTX"};
 
+        //Create Ratings array for recycler
+        float[] ratings = { (float)1.0, (float)2.5, (float)3.8, (float)4.5,
+                (float)1.9, (float)5.0};
+
+        //Create Pricing array
+        String[] pricing = {"$800.00", "$780.00", "$690.00",
+                "$420.00", "$700.00", "$420.69"};
+
         //initialise ArrayList
         for (int i = 0; i < imageNums.length; i++){
-            MainModel model = new MainModel(imageNums[i], imageNames[i]);
+            MainModel model = new MainModel(imageNums[i], imageNames[i], ratings[i], pricing[i]);
             mainModels.add(model);
         }
 

@@ -4,10 +4,14 @@ public class MainModel {
 
     Integer image;
     String imgName;
+    float ratingBar;
+    String prices;
 
-    public MainModel(Integer image, String imgName){
+    public MainModel(Integer image, String imgName, float ratingBar, String prices){
         this.image = image;
         this.imgName = imgName;
+        this.ratingBar = ratingBar;
+        this.prices = prices;
     }
 
     public Integer getImage() {
@@ -18,4 +22,11 @@ public class MainModel {
         return imgName;
     }
 
+    public double getRatingBar() {
+        return ratingBar;
+    }
+
+    public String getPrices() {
+        return prices;
+    }
 }

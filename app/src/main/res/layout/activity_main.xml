@@ -64,6 +64,28 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
 
+            <ImageView
+                android:id="@+id/green_border_main1"
+                android:layout_width="393dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/green_border"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+            <ImageView
+                android:id="@+id/green_border_main2"
+                android:layout_width="393dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/green_border"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
@@ -80,8 +102,8 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="392dp"
-                android:layout_height="222dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="340dp"
+                android:layout_marginTop="30dp"
                 android:visibility="visible"
                 app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:ignore="MissingConstraints"
@@ -91,7 +113,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="20dp"
                 android:text="Featured"
                 android:textColor="@color/colorText"
                 android:textSize="19dp"
@@ -100,19 +122,16 @@
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
-
-            <ScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView2"
-                tools:layout_editor_absoluteX="0dp"
-                tools:ignore="MissingConstraints">
-
-                <include layout="@layout/scoll_main" />
-
-
-            </ScrollView>
+            <ImageView
+                android:id="@+id/green_border_main3"
+                android:layout_width="393dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/green_border"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

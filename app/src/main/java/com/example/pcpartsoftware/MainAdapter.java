@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,6 +57,12 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
                 Toast.makeText(context, "It works!", Toast.LENGTH_SHORT).show();
             }
         });
+
+        //Set ratings
+        holder.ratingView.setRating((float) mainModels.get(position).getRatingBar());
+
+        //Set Pricing
+        holder.priceView.setText(mainModels.get(position).getPrices());
     }
 
     @Override
@@ -67,6 +74,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         //Initialize vars
         ImageView imageView;
         TextView textView;
+        RatingBar ratingView;
+        TextView priceView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -74,6 +83,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             //Assign vars
             imageView = itemView.findViewById(R.id.img_viewer);
             textView = itemView.findViewById(R.id.text_viewer);
+            ratingView = itemView.findViewById(R.id.scroller_rb);
+            priceView = itemView.findViewById(R.id.scroller_price);
 
         }
     }

@@ -4,4 +4,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="itemTitle"><font color="#80FAFBFB">Categories</font></string>
     <string name="top_picks">Top Picks</string>
+    <string name="username">Username: </string>
+    <string name="password">Password: </string>
 </resources>

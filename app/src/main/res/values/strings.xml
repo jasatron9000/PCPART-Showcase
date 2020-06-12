@@ -18,13 +18,16 @@
 
 
 
-    <string name="descr">Specs:\n\t\t\t\t\t\t\t\t\t\t\t- cool\n\t\t\t\t\t\t\t\t\t\t\t- awesome\n\t\t\t\t\t\t\t\t\t\t\t- rad\n
-        \n<i>Overview:</i>\n
+    <string name="descr"><b><i>Specs:</i></b>\n\t\t\t\t\t\t\t\t\t\t\t- Memory Size: 8GB\n\t\t\t\t\t\t\t\t\t\t\t-
+        Base Clock Speed: 1465MHz\n\t\t\t\t\t\t\t\t\t\t\t- Boost Clock Speed: 1725MHz\n\t\t\t\t\t\t\t\t\t\t\t-
+        Max Displays: 6\n\t\t\t\t\t\t\t\t\t\t\t- Length: 270mm\n\t\t\t\t\t\t\t\t\t\t\t- Display Ports: 3\n
+        \n<b><i>Overview:</i></b>\n\n
+
         Great gaming experiences are created by bending the rules.
         The AMD Radeon™ RX 5700 Series GPUs defy conventions with an all-new 7nm process infused with RDNA
         architecture that is specifically tuned for the perfect 1440p gaming experience. More efficient processing
         power handles advanced 3D effects with ease, and 8GB of high-speed GDDR6 VRAM provides ample storage for
         the detailed textures, meshes, and effects of modern games. Industry-leading software and
         frequent driver upgrades push the experience even further, enabling overclocking,
-        gameplay recording, and more.</string>
+        gameplay recording, and more.\n\n</string>
 </resources>

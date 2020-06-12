@@ -1,0 +1,318 @@
+[
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_arrow_back.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxhdpi\\ic_arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_contact_name.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-ldpi\\contact_name.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_login.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable\\bg_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable_threadripper.jpg.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable\\threadripper.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_menu.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_rectangle.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxxhdpi\\rectangle.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_symbol_heart.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxhdpi\\symbol_heart.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_rectangle_135.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-ldpi\\rectangle_135.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_menu.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-ldpi\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_rectangle.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-hdpi\\rectangle.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_arrow_back.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xhdpi\\ic_arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_arrow_drop_down.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-mdpi\\ic_arrow_drop_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_txt_bg.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable\\edit_txt_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_contact_photo.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-ldpi\\contact_photo.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_arrow_drop_down.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xhdpi\\ic_arrow_drop_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_arrow_drop_down.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_arrow_drop_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_symbol_heart.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xhdpi\\symbol_heart.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable_radeon.jpg.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable\\radeon.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_rectangle_135.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xhdpi\\rectangle_135.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_rectangle.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxhdpi\\rectangle.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable_i9.jpg.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable\\i9.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_rectangle.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xhdpi\\rectangle.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable_geforce.jpg.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable\\geforce.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\layout_login_activity.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\layout\\login_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_arrow_drop_down.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxhdpi\\ic_arrow_drop_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_symbol_heart.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-hdpi\\symbol_heart.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_rectangle.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-ldpi\\rectangle.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_menu.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-mdpi\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_symbol_heart.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxxhdpi\\symbol_heart.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_arrow_back.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-ldpi\\ic_arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_contact_name.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-mdpi\\contact_name.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_contact_photo.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xhdpi\\contact_photo.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_contact_name.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-hdpi\\contact_name.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_contact_photo.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxhdpi\\contact_photo.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_symbol_heart.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-mdpi\\symbol_heart.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_bg.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable\\btn_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_contact_name.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xhdpi\\contact_name.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_rectangle_135.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxxhdpi\\rectangle_135.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_rectangle_135.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-hdpi\\rectangle_135.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_rectangle.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-mdpi\\rectangle.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable_titanrtx.jpg.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable\\titanrtx.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_rectangle_135.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxhdpi\\rectangle_135.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\layout_alt_login_activity.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\layout\\alt_login_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_menu.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxhdpi\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_contact_name.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxxhdpi\\contact_name.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_item.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\layout\\row_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_contact_photo.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-mdpi\\contact_photo.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_contact_photo.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxxhdpi\\contact_photo.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_contact_name.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxhdpi\\contact_name.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_contact_photo.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-hdpi\\contact_photo.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_arrow_back.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-mdpi\\ic_arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_arrow_drop_down.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-hdpi\\ic_arrow_drop_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable_green_border.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable\\green_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gigabyte.jpg.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable\\gigabyte.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\layout_header.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\layout\\header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_arrow_back.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-hdpi\\ic_arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_arrow_drop_down.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-ldpi\\ic_arrow_drop_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_symbol_heart.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-ldpi\\symbol_heart.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_rectangle_135.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-mdpi\\rectangle_135.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_menu.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-hdpi\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\layout_toolbar.xml.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\layout\\toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_arrow_back.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_menu.png.flat",
+        "source": "C:\\Users\\Jacob\\AndroidStudioProjects\\CS302-Java-2020-Group23\\app\\src\\main\\res\\drawable-xhdpi\\ic_menu.png"
+    }
+]

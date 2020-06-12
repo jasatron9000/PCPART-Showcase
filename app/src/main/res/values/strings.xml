@@ -4,6 +4,25 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="itemTitle"><font color="#80FAFBFB">Categories</font></string>
     <string name="top_picks">Top Picks</string>
-    <string name="username">Username: </string>
-    <string name="password">Password: </string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+    <string name="descr">Specs:\n\t\t\t\t\t\t\t\t\t\t\t- cool\n\t\t\t\t\t\t\t\t\t\t\t- awesome\n\t\t\t\t\t\t\t\t\t\t\t- rad\n
+        \n<i>Overview:</i>\n
+        Great gaming experiences are created by bending the rules.
+        The AMD Radeon™ RX 5700 Series GPUs defy conventions with an all-new 7nm process infused with RDNA
+        architecture that is specifically tuned for the perfect 1440p gaming experience. More efficient processing
+        power handles advanced 3D effects with ease, and 8GB of high-speed GDDR6 VRAM provides ample storage for
+        the detailed textures, meshes, and effects of modern games. Industry-leading software and
+        frequent driver upgrades push the experience even further, enabling overclocking,
+        gameplay recording, and more.</string>
 </resources>

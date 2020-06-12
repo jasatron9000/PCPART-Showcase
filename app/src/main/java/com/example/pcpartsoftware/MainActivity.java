@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,7 +29,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navView;
     Button hamburger;
     RecyclerView recyclerView;
-    //Button imageButton;
 
     ArrayList<MainModel> mainModels;
     MainAdapter mainAdapter;
@@ -84,9 +84,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //set image buttons (testing)
 
 
-
+        //bring navView to front of screen
         navView.bringToFront();
 
+        // set hamburger button to open navigation drawer when clicked
         hamburger.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View hamburger) {
@@ -95,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
 
 
-
+        //set navView to 'listen for clicks in drawer'
         navView.setNavigationItemSelectedListener(this);
 
         //
@@ -113,6 +114,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
+        switch(menuItem.getItemId()){
+            case R.id.nav_cpu:
+                Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+                startActivity(intent);
+                break;
+        }
         return true;
     }
 

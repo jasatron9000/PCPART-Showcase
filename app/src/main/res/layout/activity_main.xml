@@ -32,37 +32,44 @@
             android:layout_height="match_parent"
             android:background="@color/colorBackground">
 
+
             <Button
                 android:id="@+id/button"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_width="42dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/ic_menu"
-                app:layout_constraintEnd_toStartOf="@+id/editText3"
-                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintEnd_toStartOf="@+id/search_btn"
+                app:layout_constraintHorizontal_bias="0.053"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.007" />
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/editText3"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rectangle_135"
-                android:ems="10"
-                android:hint="Search"
-                android:inputType="textPersonName"
-                android:paddingVertical="5dp"
-                android:paddingLeft="20dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-black"
+                android:text="PCPS"
                 android:textColor="@color/colorText"
-                android:textColorHint="@color/colorText"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toStartOf="@+id/search_btn"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toEndOf="@+id/button" />
+
+            <ImageButton
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/baseline_search_black_18dp"
+                android:backgroundTint="@color/colorAccent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.685"
+                app:layout_constraintHorizontal_bias="0.955"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.008" />
 
             <ImageView
                 android:id="@+id/green_border_main1"
@@ -73,7 +80,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+                app:layout_constraintTop_toBottomOf="@+id/search_btn" />
 
             <ImageView
                 android:id="@+id/green_border_main2"
@@ -97,7 +104,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+                app:layout_constraintTop_toBottomOf="@+id/search_btn" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"

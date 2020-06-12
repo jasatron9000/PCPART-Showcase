@@ -129,6 +129,7 @@
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
+
             <ImageView
                 android:id="@+id/green_border_main3"
                 android:layout_width="393dp"

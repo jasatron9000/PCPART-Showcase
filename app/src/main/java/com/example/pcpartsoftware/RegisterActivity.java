@@ -48,7 +48,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String firstName = listOfFields.get(0).getText().toString();
                 String lastName = listOfFields.get(1).getText().toString();
                 String email = listOfFields.get(2).getText().toString();
-                int PhoneNumber = Integer.parseInt(listOfFields.get(3).getText().toString());
+                String PhoneNumber = listOfFields.get(3).getText().toString();
                 String address = listOfFields.get(4).getText().toString();
                 String username = listOfFields.get(5).getText().toString();
                 String password = listOfFields.get(6).getText().toString();

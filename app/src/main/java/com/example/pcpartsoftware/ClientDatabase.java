@@ -43,7 +43,7 @@ public class ClientDatabase {
         return clientCurrent;
     }
 
-    public boolean addNewUser(String username, String password, String email, int phoneNumber, String name, String address) {
+    public boolean addNewUser(String username, String password, String email, String phoneNumber, String name, String address) {
         if (getClientByUsername(username) != null) {
             return false;
         } else {

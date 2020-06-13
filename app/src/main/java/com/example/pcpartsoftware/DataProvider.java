@@ -24,9 +24,9 @@ public class DataProvider {
     private void generateUsers(){
         System.out.println("Users Generated \n");
 
-        this.cDB.addNewUser("jbuq319", "admin", "jbuq319@aucklanduni.ac.nz", 0211234567, "Jason Buquiran","6a Gos Dr.");
-        this.cDB.addNewUser("jmuk184", "idk", "jbuq319@aucklanduni.ac.nz", 0217654321, "Jacob Mukkada","53 Hat Dr.");
-        this.cDB.addNewUser("guest", "password", "guest@gmail.com", 0210000000, "Guest Account","13 Guest Rd.");
+        this.cDB.addNewUser("jbuq319", "admin", "jbuq319@aucklanduni.ac.nz", "0211234567", "Jason Buquiran","6a Gos Dr.");
+        this.cDB.addNewUser("jmuk184", "idk", "jbuq319@aucklanduni.ac.nz", "0217654321", "Jacob Mukkada","53 Hat Dr.");
+        this.cDB.addNewUser("guest", "password", "guest@gmail.com", "0210000000", "Guest Account","13 Guest Rd.");
     }
 
     private void generateProducts(){

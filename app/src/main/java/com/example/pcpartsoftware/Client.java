@@ -10,12 +10,12 @@ public class Client {
     private static int clientNum = 0;
     private final String email;
     private final String password;
-    private final int phoneNumber;
+    private final String phoneNumber;
     private final String address;
 
     public Client(String name, String email,
                   String username, String password,
-                  int phoneNumber, String address){
+                  String phoneNumber, String address){
         this.name = name;
         this.username = username;
         this.password = password;
@@ -40,7 +40,7 @@ public class Client {
     public int getClientID() {
         return clientID;
     }
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
     public String getAddress() {

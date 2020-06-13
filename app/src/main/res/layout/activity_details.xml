@@ -43,6 +43,7 @@
             android:layout_height="65dp"
             android:background="@color/colorBackground"
             app:itemTextColor="@color/colorText"
+            app:itemIconTint="@color/colorAccent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:menu="@menu/details_menu" />
 

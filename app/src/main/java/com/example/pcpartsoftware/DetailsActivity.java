@@ -69,7 +69,9 @@ public class DetailsActivity extends AppCompatActivity {
 
                 switch(getIntent().getStringExtra("KEY")){
                     case "Main":
-                        finish();
+                        Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
+                        intent.putExtra("KEY", "Details");
+                        startActivity(intent);
                         break;
 
                     case "Login":

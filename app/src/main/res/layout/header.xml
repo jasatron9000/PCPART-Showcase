@@ -20,6 +20,7 @@
         app:layout_constraintVertical_bias="0.628" />
 
     <TextView
+        android:id="@+id/username_menu"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:text="User Name"

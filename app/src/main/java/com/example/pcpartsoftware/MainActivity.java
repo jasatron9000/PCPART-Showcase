@@ -12,10 +12,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -25,15 +27,18 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     //vars
-    DrawerLayout drawerLayout;
-    NavigationView navView;
-    Button hamburger;
-    RecyclerView recyclerView;
+    private DrawerLayout drawerLayout;
+    private NavigationView navView;
+    private Button hamburger;
+    private RecyclerView recyclerView;
+    private TextView clientName;
 
-    ArrayList<MainModel> mainModels;
-    ArrayList<Product> topPicks;
-    MainAdapter mainAdapter;
+    private ArrayList<MainModel> mainModels;
+    private MainAdapter mainAdapter;
+    private ArrayList<Product> topPicks;
 
+    private Client currentClient;
+    private DataProvider dp = DataProvider.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +108,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View hamburger) {
                 drawerLayout.openDrawer(GravityCompat.START);
+                clientName = (TextView) findViewById(R.id.username_menu);
+                clientName.setText(dp.getcDB().getCurrentClient().getName());
             }
         });
 

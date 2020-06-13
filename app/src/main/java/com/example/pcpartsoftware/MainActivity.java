@@ -59,33 +59,30 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mainModels = new ArrayList<>();
         searchButton = findViewById(R.id.search_btn);
 
+        ArrayList<Integer> imageNumsList = new ArrayList<>();
+        ArrayList<String> imageNamesList = new ArrayList<>();
+        ArrayList<Float> ratingsList = new ArrayList<>();
+        ArrayList<String> priceList = new ArrayList<>();
+
         topPicks = new ArrayList<>(DataProvider.getInstance().getCat().getListbyRating(5));
         intialiseOtherSelection();
 
         //Log.i("LOOOK AT MEE ", String.valueOf(DataProvider.getInstance().getCat().getCatalogue().size()));
 
-        int[] imageNums = {topPicks.get(0).getProductImg()[0], topPicks.get(1).getProductImg()[0],
-                topPicks.get(2).getProductImg()[0], topPicks.get(3).getProductImg()[0],
-                topPicks.get(4).getProductImg()[0]};
+        for(int i = 0; i < topPicks.size(); i++){
 
+            imageNumsList.add(topPicks.get(i).getProductImg()[0]);
+            imageNamesList.add(topPicks.get(i).getProductName());
+            ratingsList.add(topPicks.get(i).getProductRating());
+            priceList.add(topPicks.get(i).getProductPrice());
 
-        String[] imageNames = {topPicks.get(0).getProductName(), topPicks.get(1).getProductName(),
-                topPicks.get(2).getProductName(), topPicks.get(3).getProductName(),
-                topPicks.get(4).getProductName()};
+        }
 
-
-        Float[] ratings = {topPicks.get(0).getProductRating(), topPicks.get(1).getProductRating(),
-                topPicks.get(2).getProductRating(), topPicks.get(3).getProductRating(),
-                topPicks.get(4).getProductRating()};
-
-
-        String[] pricing = {topPicks.get(0).getProductPrice(), topPicks.get(1).getProductPrice(),
-                topPicks.get(2).getProductPrice(), topPicks.get(3).getProductPrice(),
-                topPicks.get(4).getProductPrice()};
 
         //initialise ArrayList
-        for (int i = 0; i < imageNums.length; i++){
-            MainModel model = new MainModel(imageNums[i], imageNames[i], ratings[i], pricing[i]);
+        for (int i = 0; i < imageNumsList.size(); i++){
+            MainModel model = new MainModel(imageNumsList.get(i), imageNamesList.get(i),
+                    ratingsList.get(i), priceList.get(i));
             mainModels.add(model);
         }
 

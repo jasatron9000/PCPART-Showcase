@@ -7,7 +7,7 @@ public class Product {
     private String productPrice;
     private static int count = 0;
     private int productID;
-    private Integer[] productImg;
+    private int[] productImg;
     private String productCategory;
     private float productRating;
     private String overview;
@@ -16,7 +16,7 @@ public class Product {
 
 
     public Product(String productName, String productPrice, String productCategory,
-                   double productRating, Integer[] productImg, String specs,
+                   double productRating, int[] productImg, String specs,
                    String descr, String overview) {
         this.productName = productName;
         this.productPrice = productPrice;
@@ -52,7 +52,7 @@ public class Product {
         return productPrice;
     }
 
-    public Integer[] getProductImg() {
+    public int[] getProductImg() {
         return productImg;
     }
 

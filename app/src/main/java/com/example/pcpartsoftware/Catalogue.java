@@ -14,10 +14,12 @@ public class Catalogue {
     }
 
     public void addToList(String productName, String productPrice, String productCategory,
-                          double productRating, Integer[] productImg){
+                          double productRating, int[] productImg, String specs,
+                          String descr, String overview){
 
         this.catalogue.add(new Product(productName, productPrice, productCategory,
-        productRating, productImg));
+        productRating, productImg, specs,
+                descr, overview));
 
     }
 

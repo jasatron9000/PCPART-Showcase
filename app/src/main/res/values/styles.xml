@@ -14,9 +14,21 @@
         <item name="android:textColor">@color/colorText</item>
     </style>
 
+    <style name="H5_Med">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
     <style name="H6_Light">
         <item name="android:textSize">20sp</item>
         <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="H6_Med">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textColor">@color/colorText</item>
     </style>
 
@@ -37,6 +49,13 @@
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColor">@color/colorText</item>
     </style>
+
+    <style name="Body_3">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

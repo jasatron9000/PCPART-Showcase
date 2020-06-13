@@ -23,6 +23,7 @@
             android:scaleType="fitCenter"
             android:id="@+id/img_viewer"
             android:src="@drawable/geforce"
+            style="?borderlessButtonStyle"
             />
 
         <Button
@@ -34,7 +35,8 @@
             android:textColor="@color/colorText"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:background="@color/colorForeGround"/>
+            android:background="@color/colorForeGround"
+            style="?borderlessButtonStyle"/>
 
         <ImageView
             android:layout_width="match_parent"

@@ -20,8 +20,17 @@ import java.util.ArrayList;
 
 public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapter.ListActivityViewHolder> {
     private ArrayList<Product> productList;
+    private OnClickActivate prodlistener;
 
-    public static class ListActivityViewHolder extends RecyclerView.ViewHolder{
+    public interface OnClickActivate{
+        void activateOnClick(int pos);
+    }
+
+    public void setOnItemClickListener(OnClickActivate listener){
+        prodlistener = listener;
+    }
+
+    public static class ListActivityViewHolder extends RecyclerView.ViewHolder {
         private ImageView imgView;
         private TextView prodName;
         private RatingBar prodRating;
@@ -35,15 +44,8 @@ public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapte
             this.prodRating = itemView.findViewById(R.id.list_item_rating);
             this.prodRatingTxt = itemView.findViewById(R.id.list_item_ratingNum);
             this.prodCost = itemView.findViewById(R.id.list_item_cost);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                }
-            });
-
         }
+
     }
 
     public ListActivityAdapter(ArrayList<Product> productList){
@@ -58,21 +60,31 @@ public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ListActivityViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ListActivityViewHolder holder, final int position) {
         final Product currentProd = productList.get(position);
 
-        holder.imgView.setImageResource(currentProd.getProductImg());
+        holder.imgView.setImageResource(currentProd.getProductImg()[0]);
         holder.prodName.setText(currentProd.getProductName());
         holder.prodRating.setRating(currentProd.getProductRating());
         holder.prodRatingTxt.setText(String.valueOf(currentProd.getProductRating()));
         holder.prodCost.setText(currentProd.getProductPrice());
 
-
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                prodlistener.activateOnClick(position);
+            }
+        });
     }
-
 
     @Override
     public int getItemCount() {
         return productList.size();
     }
+
+    public Product getProductByPos(int pos){
+        return productList.get(pos);
+    }
+
+
 }

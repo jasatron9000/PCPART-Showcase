@@ -46,7 +46,6 @@ public class ListCategoryAdapter extends ArrayAdapter<String> {
 
     }
 
-    @SuppressLint("SetTextI18n")
     @Override
     public View getDropDownView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         //set convertView to a specific layout

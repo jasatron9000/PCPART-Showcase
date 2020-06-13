@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private MainAdapter mainAdapter;
     private ArrayList<Product> topPicks;
 
+    private ListActivityRecyclerHandler gpuSelection;
+    private ListActivityRecyclerHandler cpuSelection;
+    private ListActivityRecyclerHandler ramSelection;
+
     private Client currentClient;
     private DataProvider dp = DataProvider.getInstance();
 
@@ -52,10 +56,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView = findViewById(R.id.recycler_view);
         mainModels = new ArrayList<>();
 
-
-
-
         topPicks = new ArrayList<>(DataProvider.getInstance().getCat().getListbyRating(5));
+        intialiseOtherSelection();
 
         //Log.i("LOOOK AT MEE ", String.valueOf(DataProvider.getInstance().getCat().getCatalogue().size()));
 
@@ -109,7 +111,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onClick(View hamburger) {
                 drawerLayout.openDrawer(GravityCompat.START);
                 clientName = (TextView) findViewById(R.id.username_menu);
-                clientName.setText(dp.getcDB().getCurrentClient().getName());
+                if(currentClient != null){
+                    clientName.setText(dp.getcDB().getCurrentClient().getName());
+                }
+                else{
+                    clientName.setText("No_Name");
+                }
             }
         });
 
@@ -151,6 +158,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
         }
         return true;
+    }
+
+    private void intialiseOtherSelection(){
+        String[] category = new String[]{"CPU", "GPU", "RAM"};
+        ArrayList<ArrayList<Product>> listOfProductArray = new ArrayList<>();
+
+        for (String cat : category){
+            listOfProductArray.add(new ArrayList<Product>(dp.getCat().returnListByCategory(cat)));
+        }
+        View v = this.findViewById(android.R.id.content);
+
+        cpuSelection = new ListActivityRecyclerHandler(v, R.id.cpu_select,
+                this, listOfProductArray.get(0));
+
+        gpuSelection = new ListActivityRecyclerHandler(v, R.id.gpu_select,
+                this, listOfProductArray.get(1));
+
+        ramSelection = new ListActivityRecyclerHandler(v, R.id.ram_select,
+                this, listOfProductArray.get(2));
+
+
     }
 
 

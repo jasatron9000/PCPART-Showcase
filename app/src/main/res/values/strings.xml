@@ -3,7 +3,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="itemTitle"><font color="#80FAFBFB">Categories</font></string>
-    <string name="top_picks">Top Picks</string>
+    <string name="top_picks">TOP PICKS</string>
     <string name="title_activity_details">DetailsActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <!-- Strings used for fragments for navigation -->
@@ -30,4 +30,7 @@
         the detailed textures, meshes, and effects of modern games. Industry-leading software and
         frequent driver upgrades push the experience even further, enabling overclocking,
         gameplay recording, and more.\n\n</string>
+    <string name="gpu_selection">GPU Selection</string>
+    <string name="cpu_selection">CPU Selection</string>
+    <string name="ram_selection">RAM Selection</string>
 </resources>

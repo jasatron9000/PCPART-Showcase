@@ -3,16 +3,21 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_overview"
-            android:title="Overview"/>
+            android:id="@+id/nav_overview_det"
+            android:title="Overview"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:visible="true"/>
 
         <item
-            android:id="@+id/nav_Specs"
-            android:title="Specifications" />
+            android:id="@+id/nav_specs_det"
+            android:title="Specifications"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:visible="true"/>
 
         <item
-            android:id="@+id/nav_Desc"
-            android:title="Description" />
+            android:id="@+id/nav_desc_det"
+            android:title="Description"
+            android:icon="@drawable/ic_description_black_24dp"/>
 
     </group>
 </menu>

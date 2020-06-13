@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         //Log.i("LOOOK AT MEE ", String.valueOf(DataProvider.getInstance().getCat().getCatalogue().size()));
 
-        Integer[] imageNums = {topPicks.get(0).getProductImg()[0], topPicks.get(1).getProductImg()[0],
+        int[] imageNums = {topPicks.get(0).getProductImg()[0], topPicks.get(1).getProductImg()[0],
                 topPicks.get(2).getProductImg()[0], topPicks.get(3).getProductImg()[0],
                 topPicks.get(4).getProductImg()[0]};
 

@@ -1,10 +1,12 @@
 package com.example.pcpartsoftware;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 
 public class Catalogue {
 
-    ArrayList<Product> catalogue;
+    private ArrayList<Product> catalogue;
 
 
     public Catalogue() {
@@ -40,6 +42,10 @@ public class Catalogue {
                 list.add(catalogue.get(i));
             }
         }
+
+        Log.i("SELECTION", "CAT FIRED" + ", " + category);
+
+
         if(list.size() > 0){
             return list;
         }
@@ -51,11 +57,16 @@ public class Catalogue {
 
     public ArrayList<Product> returnListByName(String category){
         ArrayList<Product> list = new ArrayList<>();
+
         for(int i =  0; i < this.catalogue.size(); i++){
             if(this.catalogue.get(i).getProductName().equals(category)){
                 list.add(catalogue.get(i));
             }
         }
+
+        Log.i("RETURN NAME", "Category: " + category);
+        Log.i("RETURN NAME", "List Size: " + list.size());
+
         if(list.size() > 0){
             return list;
         }

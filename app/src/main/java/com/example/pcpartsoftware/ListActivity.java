@@ -1,7 +1,15 @@
 package com.example.pcpartsoftware;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,7 +20,12 @@ import java.util.ArrayList;
 public class ListActivity extends AppCompatActivity {
     private ArrayList<String> categories = generateCategories();
     private ListCategoryAdapter catAdapter;
-    private ListActivityAdapter listAdapter;
+    private ListActivityRecyclerHandler rHandler;
+
+    private Button menuButton;
+    private EditText searchBar;
+
+    private int currentPos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,22 +39,75 @@ public class ListActivity extends AppCompatActivity {
         spinnerCat.setAdapter(catAdapter);
 
         //Initialise the RecyclerView
-        RecyclerView recyclerView = findViewById(R.id.list_activity_recyclerView);
-        recyclerView.setHasFixedSize(true);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-        listAdapter = new ListActivityAdapter(DataProvider.getInstance().getCat().getCatalogue());
+        ArrayList<Product> prodList = DataProvider.getInstance().getCat().getCatalogue();
+        this.rHandler = new ListActivityRecyclerHandler(this.findViewById(android.R.id.content),
+                R.id.list_activity_recyclerView, this, prodList);
 
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(listAdapter);
+        //Initialise the EditText functionality
+        this.searchBar = findViewById(R.id.list_activity_text);
+
+        //+===================================================================+
+        //|                                                                   |
+        //|               EVENT HANDLING FOR THE LIST ACTIVITY                |
+        //|                                                                   |
+        //+===================================================================+
+
+        //Handling the events for the changing the category sort
+        spinnerCat.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String selected = categories.get(position);
+                Toast.makeText(getBaseContext(), "Sorted by: " + selected, Toast.LENGTH_SHORT).show();
+
+                ArrayList<Product> sortedList = DataProvider.getInstance().getCat().returnListByCategory(selected);
+                rHandler.updatedRecycler(new ArrayList<Product>(sortedList));
+                currentPos = position;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        //Event Handling for the Search Bar
+        searchBar.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                String finalVal = searchBar.getText().toString();
+
+                ArrayList<Product> sortedList = DataProvider.getInstance().getCat().returnListByName(finalVal);
+                if(finalVal.equals("")){
+                    rHandler.updatedRecycler(new ArrayList<Product>(DataProvider.getInstance().getCat().returnListByCategory(categories.get(currentPos))));
+                }
+                else{
+                    rHandler.updatedRecycler(new ArrayList<Product>(sortedList));
+                }
+
+                Log.i("TEST", finalVal);
+            }
+        });
+
     }
 
     private ArrayList<String> generateCategories(){
         ArrayList<String> categories = new ArrayList<>();
-        categories.add("All");
+        categories.add("ALL");
         categories.add("CPU");
         categories.add("GPU");
         categories.add("RAM");
 
         return categories;
     }
+
 }

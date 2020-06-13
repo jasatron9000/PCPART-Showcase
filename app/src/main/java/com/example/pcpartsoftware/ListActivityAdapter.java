@@ -1,11 +1,15 @@
 package com.example.pcpartsoftware;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,13 +28,20 @@ public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapte
         private TextView prodRatingTxt;
         private TextView prodCost;
 
-        public ListActivityViewHolder(@NonNull View itemView) {
+        public ListActivityViewHolder(@NonNull final View itemView) {
             super(itemView);
             this.imgView = itemView.findViewById(R.id.list_item_image);
             this.prodName = itemView.findViewById(R.id.list_item_name);
             this.prodRating = itemView.findViewById(R.id.list_item_rating);
             this.prodRatingTxt = itemView.findViewById(R.id.list_item_ratingNum);
             this.prodCost = itemView.findViewById(R.id.list_item_cost);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
 
         }
     }
@@ -48,13 +59,15 @@ public class ListActivityAdapter extends RecyclerView.Adapter<ListActivityAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ListActivityViewHolder holder, int position) {
-        Product currentProd = productList.get(position);
+        final Product currentProd = productList.get(position);
 
         holder.imgView.setImageResource(currentProd.getProductImg());
         holder.prodName.setText(currentProd.getProductName());
         holder.prodRating.setRating(currentProd.getProductRating());
         holder.prodRatingTxt.setText(String.valueOf(currentProd.getProductRating()));
         holder.prodCost.setText(currentProd.getProductPrice());
+
+
     }
 
 

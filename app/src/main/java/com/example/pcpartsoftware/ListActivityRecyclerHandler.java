@@ -23,6 +23,7 @@ public class ListActivityRecyclerHandler {
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(listAdapter);
+
     }
 
     //Updated the contents based on a listener
@@ -33,5 +34,9 @@ public class ListActivityRecyclerHandler {
         this.currentList.addAll(newProdList);
 
         this.listAdapter.notifyDataSetChanged();
+    }
+
+    public ListActivityAdapter getAdapter(){
+        return listAdapter;
     }
 }

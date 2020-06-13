@@ -32,6 +32,12 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_activity);
 
+        //+===================================================================+
+        //|                                                                   |
+        //|               INITIALISATION FOR THE LIST ACTIVITY                |
+        //|                                                                   |
+        //+===================================================================+
+
         //Initialising the Spinner for the drop down menu to sort
         Spinner spinnerCat = findViewById(R.id.list_activity_cat);
 
@@ -42,6 +48,7 @@ public class ListActivity extends AppCompatActivity {
         ArrayList<Product> prodList = DataProvider.getInstance().getCat().getCatalogue();
         this.rHandler = new ListActivityRecyclerHandler(this.findViewById(android.R.id.content),
                 R.id.list_activity_recyclerView, this, prodList);
+
 
         //Initialise the EditText functionality
         this.searchBar = findViewById(R.id.list_activity_text);
@@ -85,8 +92,9 @@ public class ListActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
                 String finalVal = searchBar.getText().toString();
-
                 ArrayList<Product> sortedList = DataProvider.getInstance().getCat().returnListByName(finalVal);
+
+                //Populate the RecyclerView with the sorted data in the Spinner if nothing is written
                 if(finalVal.equals("")){
                     rHandler.updatedRecycler(new ArrayList<Product>(DataProvider.getInstance().getCat().returnListByCategory(categories.get(currentPos))));
                 }
@@ -97,6 +105,13 @@ public class ListActivity extends AppCompatActivity {
                 Log.i("TEST", finalVal);
             }
         });
+
+        //+===================================================================+
+        //|                                                                   |
+        //|               INTENT HANDLER FOR THE LIST ACTIVITY                |
+        //|                                                                   |
+        //+===================================================================+
+
 
     }
 

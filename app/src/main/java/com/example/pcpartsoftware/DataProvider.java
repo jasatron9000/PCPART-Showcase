@@ -32,27 +32,27 @@ public class DataProvider {
     private void generateProducts(){
         System.out.println("Products Generated \n");
 
-        Integer[] img1 =  {R.drawable.geforce, R.drawable.gigabyte, R.drawable.i9};
+        int[] img1 =  {R.drawable.geforce, R.drawable.gigabyte, R.drawable.i9};
         this.cat.addToList("Intel i7", "$400.00", "CPU",
                 4.5, img1);
 
-        Integer[] img2 =  {R.drawable.gigabyte, R.drawable.i9, R.drawable.radeon};
+        int[] img2 =  {R.drawable.gigabyte, R.drawable.i9, R.drawable.radeon};
         this.cat.addToList("AMD Ryzen 7", "$350.00", "CPU",
                 4.9, img2);
 
-        Integer[] img3 =  {R.drawable.i9, R.drawable.radeon, R.drawable.threadripper};
+        int[] img3 =  {R.drawable.i9, R.drawable.radeon, R.drawable.threadripper};
         this.cat.addToList("AMD Vega", "$420.69", "GPU",
                 3.5, img3);
 
-        Integer[] img4 =  {R.drawable.radeon, R.drawable.threadripper, R.drawable.titanrtx};
+        int[] img4 =  {R.drawable.radeon, R.drawable.threadripper, R.drawable.titanrtx};
         this.cat.addToList("NVIDIA GTX2080", "$690.42", "GPU",
                 5.0, img4);
 
-        Integer[] img5 =  {R.drawable.threadripper, R.drawable.titanrtx, R.drawable.geforce};
+        int[] img5 =  {R.drawable.threadripper, R.drawable.titanrtx, R.drawable.geforce};
         this.cat.addToList("Corsair 16GB RAM", "$70.00", "RAM",
                 4.5, img5);
 
-        Integer[] img6 =  {R.drawable.titanrtx, R.drawable.radeon, R.drawable.i9};
+        int[] img6 =  {R.drawable.titanrtx, R.drawable.radeon, R.drawable.i9};
         this.cat.addToList("Corsair 8GB RAM", "$80.00", "RAM",
                 3.0, img6);
 

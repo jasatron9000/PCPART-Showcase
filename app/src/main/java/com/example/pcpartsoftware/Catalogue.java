@@ -58,7 +58,8 @@ public class Catalogue {
     public ArrayList<Product> returnListByName(String name){
         ArrayList<Product> list = new ArrayList<>();
         for(int i =  0; i < this.catalogue.size(); i++){
-            if(this.catalogue.get(i).getProductName().toLowerCase().replace(" ","").equals(name.toLowerCase().replace(" ",""))){
+            if(this.catalogue.get(i).getProductName().toLowerCase().replace(" ","")
+                    .contains(name.toLowerCase().replace(" ",""))){
                 list.add(catalogue.get(i));
             }
         }

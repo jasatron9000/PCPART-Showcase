@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -46,13 +47,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navView = (NavigationView) findViewById(R.id.nav_bar);
         recyclerView = findViewById(R.id.recycler_view);
         mainModels = new ArrayList<>();
-        topPicks = new ArrayList<>();
 
 
 
 
-        topPicks = DataProvider.getInstance().getCat().getListbyRating(5);
+        topPicks = new ArrayList<>(DataProvider.getInstance().getCat().getListbyRating(5));
 
+        Log.i("LOOOK AT MEE ", String.valueOf(DataProvider.getInstance().getCat().getCatalogue().size()));
 
         Integer[] imageNums = {topPicks.get(0).getProductImg(), topPicks.get(1).getProductImg(),
                 topPicks.get(2).getProductImg(), topPicks.get(3).getProductImg(),
@@ -139,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_logout:
                 Intent intent1 = new Intent(MainActivity.this, LoginActivity.class);
-                intent1.putExtra("KEY", "X");
+                intent1.putExtra("KEY", "Main");
                 startActivity(intent1);
                 break;
         }

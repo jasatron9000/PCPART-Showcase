@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Button hamburger;
     private RecyclerView recyclerView;
     private TextView clientName;
+    private ImageButton searchButton;
 
     private ArrayList<MainModel> mainModels;
     private MainAdapter mainAdapter;
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navView = (NavigationView) findViewById(R.id.nav_bar);
         recyclerView = findViewById(R.id.recycler_view);
         mainModels = new ArrayList<>();
+        searchButton = findViewById(R.id.search_btn);
 
         topPicks = new ArrayList<>(DataProvider.getInstance().getCat().getListbyRating(5));
         intialiseOtherSelection();
@@ -86,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mainModels.add(model);
         }
 
+
         // Horizontal Layout
         LinearLayoutManager layoutManager = new LinearLayoutManager(MainActivity.this,
                 LinearLayoutManager.HORIZONTAL, false);
@@ -94,13 +97,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
         //Initialise MainAdapter
-        mainAdapter = new MainAdapter(MainActivity.this, mainModels);
+        mainAdapter = new MainAdapter(MainActivity.this, mainModels, topPicks);
 
         //Set MainAdapter to recyclerView
         recyclerView.setAdapter(mainAdapter);
 
-        //set image buttons (testing)
+        //set search button to go to list
+        searchButton.setOnClickListener(new ImageButton.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //creating a new intent with current context and next activity class args
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                //adding extra string to identify prev activity in next activity
+                intent.putExtra("KEY", "Main");
+                //start the next activity
+                startActivity(intent);
 
+            }
+        });
 
         //bring navView to front of screen
         navView.bringToFront();

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorForeGround">
 
     <androidx.appcompat.widget.Toolbar
@@ -81,11 +81,13 @@
                     android:id="@+id/details_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
                     android:layout_marginTop="5sp"
                     android:fontFamily="sans-serif-black"
-                    android:layout_marginLeft="10sp"
-                    android:textColor="@color/colorText"/>
+                    android:textColor="@color/colorText"
+                    android:textSize="25sp" />
+
 
                 <ImageView
                     android:id="@+id/green_border_main3"
@@ -99,13 +101,53 @@
                     android:id="@+id/details_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="5sp"
                     android:background="@color/colorForeGround"
                     android:fontFamily="sans-serif"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="10dp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="10sp"
                     android:textColor="@color/colorText"
                     android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/details_pricetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/colorText"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/gst_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="incl. GST"
+                    android:textColor="@color/colorText"/>
+
+
+
+                <RatingBar
+                    android:id="@+id/rb_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15sp"
+                    android:background="@color/colorForeGround"
+                    style="?ratingBarStyleIndicator"
+                    android:numStars="5" />
+
+                <TextView
+                    android:id="@+id/usrrtg_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp" />
+
+
+
 
 
             </LinearLayout>
@@ -120,8 +162,8 @@
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@color/colorBackground"
-        app:itemTextColor="@color/colorText"
         app:itemIconTint="@color/colorAccent"
+        app:itemTextColor="@color/colorText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/details_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

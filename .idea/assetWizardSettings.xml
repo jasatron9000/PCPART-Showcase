@@ -14,8 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_mainlogogreen" />
-                            <entry key="sourceFile" value="D:\Biggie Cheese\Desktop\Pictures\mainLogoGreen.svg" />
+                            <entry key="outputName" value="ic_profilepicture" />
+                            <entry key="sourceFile" value="D:\Biggie Cheese\Desktop\Pictures\profilePicture.svg" />
                           </map>
                         </option>
                       </PersistentState>

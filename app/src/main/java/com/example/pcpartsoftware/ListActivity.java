@@ -1,5 +1,6 @@
 package com.example.pcpartsoftware;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -22,10 +23,11 @@ public class ListActivity extends AppCompatActivity {
     private ListCategoryAdapter catAdapter;
     private ListActivityRecyclerHandler rHandler;
 
-    private Button menuButton;
+    private Button backButton;
     private EditText searchBar;
 
     private int currentPos;
+    private DataProvider dp = DataProvider.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,17 +40,27 @@ public class ListActivity extends AppCompatActivity {
         //|                                                                   |
         //+===================================================================+
 
+        //Intialise the button
+        backButton = (Button) findViewById(R.id.list_activity_back);
+
+        //Get the intent
+        Intent listIntent = getIntent();
+        String sCategory = listIntent.getStringExtra("SORT BY");
+        ArrayList<Product> prodList = dp.getCat().getCatalogue();
+
         //Initialising the Spinner for the drop down menu to sort
         Spinner spinnerCat = findViewById(R.id.list_activity_cat);
 
         catAdapter = new ListCategoryAdapter(this, 0, categories);
         spinnerCat.setAdapter(catAdapter);
+        if (sCategory != null){
+            spinnerCat.setSelection(getCurrentPos(sCategory));
+        }
 
         //Initialise the RecyclerView
-        ArrayList<Product> prodList = DataProvider.getInstance().getCat().getCatalogue();
+
         this.rHandler = new ListActivityRecyclerHandler(this.findViewById(android.R.id.content),
                 R.id.list_activity_recyclerView, this, prodList);
-
 
         //Initialise the EditText functionality
         this.searchBar = findViewById(R.id.list_activity_text);
@@ -64,11 +76,11 @@ public class ListActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selected = categories.get(position);
-                Toast.makeText(getBaseContext(), "Sorted by: " + selected, Toast.LENGTH_SHORT).show();
 
                 ArrayList<Product> sortedList = DataProvider.getInstance().getCat().returnListByCategory(selected);
                 rHandler.updatedRecycler(new ArrayList<Product>(sortedList));
                 currentPos = position;
+                Toast.makeText(view.getContext(), "Sorted By: " + selected, Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -106,6 +118,17 @@ public class ListActivity extends AppCompatActivity {
             }
         });
 
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListActivity.this, MainActivity.class);
+                startActivity(intent);
+
+                //Override the Animation Enter/Leave
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+            }
+        });
+
         //+===================================================================+
         //|                                                                   |
         //|               INTENT HANDLER FOR THE LIST ACTIVITY                |
@@ -113,6 +136,16 @@ public class ListActivity extends AppCompatActivity {
         //+===================================================================+
 
 
+    }
+
+    private int getCurrentPos(String sCategory) {
+        for(int i = 0; i < categories.size(); i++){
+            if(categories.get(i).equals(sCategory)){
+                return i;
+            }
+        }
+
+        return 0;
     }
 
     private ArrayList<String> generateCategories(){

@@ -107,13 +107,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         searchButton.setOnClickListener(new ImageButton.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //creating a new intent with current context and next activity class args
-                Intent intent = new Intent(MainActivity.this, ListActivity.class);
-                //adding extra string to identify prev activity in next activity
-                intent.putExtra("KEY", "Main");
-                //start the next activity
-                startActivity(intent);
-
+                gotoMainActivity("SORT BY","ALL");
             }
         });
 
@@ -122,6 +116,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // set hamburger button to open navigation drawer when clicked
         hamburger.setOnClickListener(new Button.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View hamburger) {
                 drawerLayout.openDrawer(GravityCompat.START);
@@ -161,19 +156,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Switch Statement to change Activities.
         // KEY is just there cos that's how it works
         switch(menuItem.getItemId()){
-            case R.id.nav_cpu:
-                //creating a new intent with current context and next activity class args
-                Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
-                //adding extra string to identify prev activity in next activity
-                intent.putExtra("KEY", "Main");
-                //start the next activity
-                startActivity(intent);
-                break;
             case R.id.nav_logout:
                 Intent intent1 = new Intent(MainActivity.this, LoginActivity.class);
                 intent1.putExtra("KEY", "Main");
                 startActivity(intent1);
                 break;
+            case R.id.nav_gpu:
+                gotoMainActivity("SORT BY","GPU");
+                break;
+            case R.id.nav_cpu:
+                gotoMainActivity("SORT BY","CPU");
+                break;
+            case R.id.nav_ram:
+                gotoMainActivity("SORT BY","RAM");
+                break;
+            case R.id.nav_profile:
+                Intent intentProfile = new Intent (MainActivity.this, AccountActivity.class);
+                startActivity(intentProfile);
+
         }
         return true;
     }
@@ -197,6 +197,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 this, listOfProductArray.get(2));
 
 
+    }
+
+    private void gotoMainActivity(String key, String code){
+        //creating a new intent with current context and next activity class args
+        Intent intentRAM = new Intent(MainActivity.this, ListActivity.class);
+
+        //adding extra string to identify prev activity in next activity
+        intentRAM.putExtra(key, code);
+
+        //start the next activity
+        startActivity(intentRAM);
+
+        //Override the Animation Enter/Leave
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
 

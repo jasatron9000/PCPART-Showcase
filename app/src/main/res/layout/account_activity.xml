@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountActivity"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarGeneralSize"
+        android:background="@drawable/green_border"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingHorizontal="@dimen/actionBarGapSize">
+
+        <Button
+            android:id="@+id/profile_back"
+            android:layout_width="@dimen/actionBarGeneralSize"
+            android:layout_height="@dimen/actionBarGeneralSize"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_backarrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/actionBarGapSize"
+            android:layout_toEndOf="@+id/profile_back"
+            android:gravity="center"
+            android:text="User Profile"
+            style="@style/H5_Med"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorDarkForeGround"
+        android:padding="@dimen/actionBarGapSize">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/actionBarGapSize"
+            android:background="@drawable/ic_profilepicture"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/actionBarGapSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5sp"
+            android:layout_marginTop="@dimen/actionBarGapSize"
+            android:background="@drawable/rounded_background">
+            <TextView
+                android:id="@+id/fullNameTxt"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                style="@style/H6_Med"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/actionBarGapSize"
+                android:text="Full Name:"
+                />
+
+            <TextView
+                android:id="@+id/profile_fullName"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                style="@style/H6_Light"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/fullNameTxt"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/actionBarGapSize"
+                android:text="Full Name:"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginVertical="5sp"
+            android:background="@drawable/rounded_background">
+            <TextView
+                android:id="@+id/userNameTxt"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                style="@style/H6_Med"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/actionBarGapSize"
+                android:text="Username:"/>
+            />
+
+            <TextView
+                android:id="@+id/profile_username"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                style="@style/H6_Light"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/userNameTxt"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/actionBarGapSize"
+                android:text="Full Name:"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginVertical="5sp"
+            android:background="@drawable/rounded_background">
+            <TextView
+                android:id="@+id/emailTxt"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                style="@style/H6_Med"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/actionBarGapSize"
+                android:text="Email:"/>
+            />
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                style="@style/H6_Light"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/emailTxt"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/actionBarGapSize"
+                android:text="Full Name:"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginVertical="5sp"
+            android:background="@drawable/rounded_background">
+            <TextView
+                android:id="@+id/addressTxt"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                style="@style/H6_Med"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/actionBarGapSize"
+                android:text="Address"/>
+            />
+
+            <TextView
+                android:id="@+id/profile_address"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                style="@style/H6_Light"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/addressTxt"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/actionBarGapSize"
+                android:text="Full Name:"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="@dimen/actionBarGapSize"
+            android:background="@drawable/rounded_background">
+
+            <TextView
+                android:id="@+id/phoneTxt"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                style="@style/H6_Med"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/actionBarGapSize"
+                android:text="Phone #: " />
+            />
+
+            <TextView
+                android:id="@+id/profile_phone"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                style="@style/H6_Light"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/phoneTxt"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/actionBarGapSize"
+                android:text="Full Name:"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10sp">
+
+            <Button
+                android:id="@+id/profile_logOff"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginHorizontal="@dimen/actionBarGeneralSize"
+                android:background="@drawable/btn_bg"
+                style="?borderlessButtonStyle"
+                android:text="Log Out"
+                android:textSize="15sp"
+                android:textColor="@color/colorText"
+                android:fontFamily="sans-serif-light"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

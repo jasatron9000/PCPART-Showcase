@@ -2,6 +2,7 @@ package com.example.pcpartsoftware;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
@@ -25,8 +26,15 @@ public class DetailsActivity extends AppCompatActivity {
     DetailsAdapter detailsAdapter;
     ImageButton arrow;
     BottomNavigationView detNav;
+    TextView targetText;
+    TextView titleText;
 
-    private Product currentProd;
+    Product currentProd;
+
+    String over;
+    String desc;
+    String spec;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +44,27 @@ public class DetailsActivity extends AppCompatActivity {
         arrow = findViewById(R.id.arrow_details);
         recyclerView = findViewById(R.id.recycler_view_details);
         detailModels = new ArrayList<>();
+        Intent currentIntent = getIntent();
+        currentProd = currentIntent.getParcelableExtra("PROD");
+
+        targetText = findViewById(R.id.details_text);
+        titleText = findViewById(R.id.details_title);
+
 
         detNav = findViewById(R.id.nav_details);
         detNav.setOnNavigationItemSelectedListener(detNavListen);
 
         //Create img array for recycler
-        Integer[] imageNumsDet = {R.drawable.geforce, R.drawable.gigabyte, R.drawable.i9,
-                R.drawable.radeon, R.drawable.threadripper, R.drawable.titanrtx};
+        int[] imageNumsDet = currentProd.getProductImg();
+        over = currentProd.getOverview();
+        desc = currentProd.getDescr();
+        spec = currentProd.getSpecs();
+        String name = currentProd.getProductName();
+        String price = currentProd.getProductPrice();
+        //float rating = currentIntent.getFloatExtra("RTG");
+
+        targetText.setText(over);
+        titleText.setText("Overview");
 
         //initialise ArrayList
         for (int i = 0; i < imageNumsDet.length; i++){
@@ -66,6 +88,20 @@ public class DetailsActivity extends AppCompatActivity {
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                switch(getIntent().getStringExtra("KEY")){
+                    case "Main":
+                        Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
+                        intent.putExtra("KEY", "Details");
+                        startActivity(intent);
+                        break;
+
+                    case "List":
+                        Intent intent1 = new Intent(DetailsActivity.this, ListActivity.class);
+                        intent1.putExtra("KEY", "Details");
+                        startActivity(intent1);
+                        break;
+                }
                 Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
                 startActivity(intent);
             }
@@ -80,36 +116,19 @@ public class DetailsActivity extends AppCompatActivity {
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                    TextView targetText = findViewById(R.id.details_text);
-                    String overview = "Dear students, \n" +
-                            "\n" +
-                            "I am a TA from the CS302 course. I am very sorry that the demo video you uploaded is expired. We didn't download it in time. I am very sorry about it. \n" +
-                            "\n" +
-                            "So may I ask would you please kindly upload it again and send me your link with Group Number. I am very sorry about the trouble. I hope you still have it on your computer." +
-                            " Please let me know if you are unable to find it. We will try to finger it out. " +
-                            "\n\n\n\n\n\n\n";
-                    String specs = "\"Firstly, is it alright to use Lorem Ipsum for our DetailsActivity text?\" No.\n" +
-                            "\n" +
-                            "\"Secondly, how does the 2min Q&A work? Do we get emailed questions to answer or something?\" If required, we will organize a Zoom session with you. The Q&A doesn't have any mark; " +
-                            "it's only to prove the originality of your submission. Just keep checking " +
-                            "your email regularly in the coming weeks in case we have concerns about the originality of your code. \n\n\n\n\n\n\n";
-
-
-                    String descript = "Good morning guys!\n" +
-                            "\n" +
-                            "We have our last online tutorial today at 1pm today. It's basically a brief exam overview. My office hour will follow right after. I'm pretty sure this is the last interaction I'll be " +
-                            "having with you as your tutor so I hope you all do amazing in your exam and " +
-                            "have a wonderful rest of the year! Feel free to email me any practice exams you've attempted, I'll be happy to give feedback.\n\n\n\n\n\n\n";
 
                     switch(menuItem.getItemId()){
                         case R.id.nav_overview_det:
-                            targetText.setText(overview);
+                            targetText.setText(over);
+                            titleText.setText("Overview");
                             break;
                         case R.id.nav_specs_det:
-                            targetText.setText(specs);
+                            targetText.setText(spec);
+                            titleText.setText("Specifications");
                             break;
                         case R.id.nav_desc_det:
-                            targetText.setText(descript);
+                            targetText.setText(desc);
+                            titleText.setText("Description");
                             break;
                     }
                     return true;

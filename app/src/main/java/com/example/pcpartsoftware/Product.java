@@ -1,7 +1,10 @@
 package com.example.pcpartsoftware;
 
 
-public class Product {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Product implements Parcelable {
 
     private String productName;
     private String productPrice;
@@ -31,6 +34,30 @@ public class Product {
         count++;
 
     }
+
+    protected Product(Parcel in) {
+        productName = in.readString();
+        productPrice = in.readString();
+        productID = in.readInt();
+        productImg = in.createIntArray();
+        productCategory = in.readString();
+        productRating = in.readFloat();
+        overview = in.readString();
+        specs = in.readString();
+        descr = in.readString();
+    }
+
+    public static final Creator<Product> CREATOR = new Creator<Product>() {
+        @Override
+        public Product createFromParcel(Parcel in) {
+            return new Product(in);
+        }
+
+        @Override
+        public Product[] newArray(int size) {
+            return new Product[size];
+        }
+    };
 
     public float getProductRating() {
         return productRating;
@@ -69,4 +96,21 @@ public class Product {
     }
 
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(productName);
+        dest.writeString(productPrice);
+        dest.writeInt(productID);
+        dest.writeIntArray(productImg);
+        dest.writeString(productCategory);
+        dest.writeFloat(productRating);
+        dest.writeString(overview);
+        dest.writeString(specs);
+        dest.writeString(descr);
+    }
 }

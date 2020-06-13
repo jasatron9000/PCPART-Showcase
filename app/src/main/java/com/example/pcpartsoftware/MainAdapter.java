@@ -1,6 +1,9 @@
 package com.example.pcpartsoftware;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Parcelable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,10 +20,12 @@ import java.util.ArrayList;
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     ArrayList<MainModel> mainModels;
     Context context;
+    ArrayList<Product> products;
 
-    public MainAdapter(Context context, ArrayList<MainModel> mainModels){
+    public MainAdapter(Context context, ArrayList<MainModel> mainModels, ArrayList<Product> products){
         this.context = context;
         this.mainModels = mainModels;
+        this.products = products;
     }
 
     @NonNull
@@ -33,16 +38,27 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         //Set image to ImageView
         holder.imageView.setImageResource(mainModels.get(position).getImage());
+
+        //final Product product = mainModels.get(position).getProduct();
+        //final int pos = position;
 
         //make img clickable
         holder.imageView.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "It also works!", Toast.LENGTH_SHORT).show();
+                //creating a new intent with current context and next activity class args
+                Intent intent = new Intent(context, DetailsActivity.class);
+                //adding extra string to identify prev activity in next activity
+                intent.putExtra("KEY", "Main");
+                intent.putExtra("PROD", products.get(position));
+                //start the next activity
+                context.startActivity(intent);
+
+
             }
         });
 
@@ -52,9 +68,17 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         //make text clickable
         holder.textView.setOnClickListener(new View.OnClickListener(){
 
+
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "It works!", Toast.LENGTH_SHORT).show();
+
+                //creating a new intent with current context and next activity class args
+                Intent intent = new Intent(context, DetailsActivity.class);
+                //adding extra string to identify prev activity in next activity
+                intent.putExtra("KEY", "Main");
+                intent.putExtra("PROD", products.get(position));
+                //start the next activity
+                context.startActivity(intent);
             }
         });
 

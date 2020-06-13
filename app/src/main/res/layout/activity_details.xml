@@ -1,51 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorForeGround">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/arrow_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/page_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Product Details"
+            android:textColor="@color/colorText"
+            android:textSize="20dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorForeGround"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorBackground"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageButton
-                android:id="@+id/arrow_details"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_arrow_back" />
-
-            <TextView
-                android:id="@+id/page_title_bar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:fontFamily="sans-serif-black"
-                android:gravity="center"
-                android:text="Product Details"
-                android:textColor="@color/colorText"
-                android:textSize="20dp" />
-
-        </androidx.appcompat.widget.Toolbar>
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/nav_details"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:background="@color/colorBackground"
-            app:itemTextColor="@color/colorText"
-            app:itemIconTint="@color/colorAccent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:menu="@menu/details_menu" />
 
         <ScrollView
             android:id="@+id/scrollView2"
@@ -82,6 +78,24 @@
                     app:layout_constraintTop_toBottomOf="@+id/search_btn" />
 
                 <TextView
+                    android:id="@+id/details_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:layout_marginTop="5sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginLeft="10sp"
+                    android:textColor="@color/colorText"/>
+
+                <ImageView
+                    android:id="@+id/green_border_main3"
+                    android:layout_width="393sp"
+                    android:layout_height="5sp"
+                    android:layout_marginTop="2sp"
+                    android:background="@drawable/green_border"
+                    app:layout_constraintTop_toBottomOf="@+id/search_btn" />
+
+                <TextView
                     android:id="@+id/details_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -90,7 +104,6 @@
                     android:fontFamily="sans-serif"
                     android:paddingLeft="20dp"
                     android:paddingRight="10dp"
-                    android:text="@string/descr"
                     android:textColor="@color/colorText"
                     android:textSize="20dp" />
 
@@ -100,12 +113,15 @@
         </ScrollView>
 
 
+    </LinearLayout>
 
-
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_details"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorBackground"
+        app:itemTextColor="@color/colorText"
+        app:itemIconTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/details_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,7 @@ public class MainModel {
         this.prices = prices;
     }
 
+
     public Integer getImage() {
         return image;
     }
@@ -29,4 +30,5 @@ public class MainModel {
     public String getPrices() {
         return prices;
     }
+
 }

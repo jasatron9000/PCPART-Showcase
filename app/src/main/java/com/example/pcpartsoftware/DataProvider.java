@@ -33,22 +33,22 @@ public class DataProvider {
         System.out.println("Products Generated \n");
 
         this.cat.addToList("Intel i7", "$400.00", "CPU",
-                4.5, 10);
+                4.5, R.drawable.geforce);
 
         this.cat.addToList("AMD Ryzen 7", "$350.00", "CPU",
-                4.9, 11);
+                4.9, R.drawable.gigabyte);
 
         this.cat.addToList("AMD Vega", "$420.69", "GPU",
-                3.5, 12);
+                3.5, R.drawable.i9);
 
         this.cat.addToList("NVIDIA GTX2080", "$690.42", "GPU",
-                5.0, 13);
+                5.0, R.drawable.radeon);
 
         this.cat.addToList("Corsair 16GB RAM", "$70.00", "RAM",
-                4.5, 14);
+                4.5, R.drawable.threadripper);
 
         this.cat.addToList("Corsair 8GB RAM", "$80.00", "RAM",
-                3.0, 15);
+                3.0, R.drawable.titanrtx);
 
     }
 

@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorForeGround">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorForeGround"
         android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorBackground">
+            android:background="@color/colorBackground"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
                 android:id="@+id/arrow_details"
@@ -35,23 +37,25 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-        <ScrollView
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_details"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="65dp"
+            android:background="@color/colorBackground"
+            app:itemTextColor="@color/colorText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/details_menu" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="CPU"
-                    android:textColor="@color/colorText"
-                    android:textSize="30dp"
-                    android:fontFamily="sans-serif-black"/>
 
                 <ImageView
                     android:id="@+id/green_border_main1"
@@ -77,23 +81,30 @@
                     app:layout_constraintTop_toBottomOf="@+id/search_btn" />
 
                 <TextView
+                    android:id="@+id/details_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorForeGround"
+                    android:fontFamily="sans-serif"
                     android:paddingLeft="20dp"
                     android:paddingRight="10dp"
                     android:text="@string/descr"
                     android:textColor="@color/colorText"
-                    android:textSize="20dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="sans-serif"
-                    android:background="@color/colorForeGround"/>
+                    android:textSize="20dp" />
+
 
             </LinearLayout>
 
         </ScrollView>
 
 
-    </LinearLayout>
 
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

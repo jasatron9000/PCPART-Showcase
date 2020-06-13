@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     RecyclerView recyclerView;
 
     ArrayList<MainModel> mainModels;
+    ArrayList<Product> topPicks;
     MainAdapter mainAdapter;
 
 
@@ -45,22 +46,32 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navView = (NavigationView) findViewById(R.id.nav_bar);
         recyclerView = findViewById(R.id.recycler_view);
         mainModels = new ArrayList<>();
+        topPicks = new ArrayList<>();
 
-        //Create img array for recycler
-        Integer[] imageNums = {R.drawable.geforce, R.drawable.gigabyte, R.drawable.i9,
-                R.drawable.radeon, R.drawable.threadripper, R.drawable.titanrtx};
 
-        //Create string array
-        String[] imageNames = {"NVIDIA GeForce", "NVIDIA GIGABYTE", "Intel Core i9",
-                "AMD Radeon", "AMD ThreadRipper", "Titan RTX"};
 
-        //Create Ratings array for recycler
-        float[] ratings = { (float)1.0, (float)2.5, (float)3.8, (float)4.5,
-                (float)1.9, (float)5.0};
 
-        //Create Pricing array
-        String[] pricing = {"$800.00", "$780.00", "$690.00",
-                "$420.00", "$700.00", "$420.69"};
+        topPicks = DataProvider.getInstance().getCat().getListbyRating(5);
+
+
+        Integer[] imageNums = {topPicks.get(0).getProductImg(), topPicks.get(1).getProductImg(),
+                topPicks.get(2).getProductImg(), topPicks.get(3).getProductImg(),
+                topPicks.get(4).getProductImg()};
+
+
+        String[] imageNames = {topPicks.get(0).getProductName(), topPicks.get(1).getProductName(),
+                topPicks.get(2).getProductName(), topPicks.get(3).getProductName(),
+                topPicks.get(4).getProductName()};
+
+
+        Float[] ratings = {topPicks.get(0).getProductRating(), topPicks.get(1).getProductRating(),
+                topPicks.get(2).getProductRating(), topPicks.get(3).getProductRating(),
+                topPicks.get(4).getProductRating()};
+
+
+        String[] pricing = {topPicks.get(0).getProductPrice(), topPicks.get(1).getProductPrice(),
+                topPicks.get(2).getProductPrice(), topPicks.get(3).getProductPrice(),
+                topPicks.get(4).getProductPrice()};
 
         //initialise ArrayList
         for (int i = 0; i < imageNums.length; i++){
@@ -115,13 +126,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
+        // Switch Statement to change Activities.
+        // KEY is just there cos that's how it works
         switch(menuItem.getItemId()){
             case R.id.nav_cpu:
+                //creating a new intent with current context and next activity class args
                 Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+                //adding extra string to identify prev activity in next activity
+                intent.putExtra("KEY", "Main");
+                //start the next activity
                 startActivity(intent);
                 break;
             case R.id.nav_logout:
                 Intent intent1 = new Intent(MainActivity.this, LoginActivity.class);
+                intent1.putExtra("KEY", "X");
                 startActivity(intent1);
                 break;
         }

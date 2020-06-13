@@ -45,11 +45,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ListActivityRecyclerHandler ramSelection;
 
     private DataProvider dp = DataProvider.getInstance();
+    private String valueIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Retrieve Intent
+        Intent currentIntent = getIntent();
+        valueIntent = currentIntent.getStringExtra("LoginIntent");
 
         // Assign and initialise variables
         hamburger = (Button) findViewById(R.id.button);
@@ -146,7 +151,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             drawerLayout.closeDrawer(GravityCompat.START);
         }
         else{
-            super.onBackPressed();
+            if(valueIntent == null){
+                super.onBackPressed();
+            }
         }
     }
 

@@ -55,24 +55,15 @@ public class Catalogue {
 
     }
 
-    public ArrayList<Product> returnListByName(String category){
+    public ArrayList<Product> returnListByName(String name){
         ArrayList<Product> list = new ArrayList<>();
-
         for(int i =  0; i < this.catalogue.size(); i++){
-            if(this.catalogue.get(i).getProductName().equals(category)){
+            if(this.catalogue.get(i).getProductName().toLowerCase().replace(" ","").equals(name.toLowerCase().replace(" ",""))){
                 list.add(catalogue.get(i));
             }
         }
 
-        Log.i("RETURN NAME", "Category: " + category);
-        Log.i("RETURN NAME", "List Size: " + list.size());
-
-        if(list.size() > 0){
-            return list;
-        }
-        else{
-            return this.catalogue;
-        }
+        return list;
 
     }
 

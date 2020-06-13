@@ -7,21 +7,27 @@ public class Product {
     private String productPrice;
     private static int count = 0;
     private int productID;
-    private Integer productImg;
+    private Integer[] productImg;
     private String productCategory;
     private float productRating;
+    private String overview;
     private String specs;
-    private String text;
+    private String descr;
 
 
     public Product(String productName, String productPrice, String productCategory,
-                   double productRating, Integer productImg) {
+                   double productRating, Integer[] productImg, String specs,
+                   String descr, String overview) {
         this.productName = productName;
         this.productPrice = productPrice;
         this.productCategory = productCategory;
         this.productRating = (float)productRating;
         this.productImg = productImg;
+        this.overview = overview;
+        this.specs = specs;
+        this.descr = descr;
         this.productID = this.count;
+
         count++;
 
     }
@@ -46,7 +52,21 @@ public class Product {
         return productPrice;
     }
 
-    public Integer getProductImg() {
+    public Integer[] getProductImg() {
         return productImg;
     }
+
+    public String getDescr() {
+        return descr;
+    }
+
+    public String getOverview() {
+        return overview;
+    }
+
+    public String getSpecs() {
+        return specs;
+    }
+
+
 }

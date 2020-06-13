@@ -8,18 +8,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
-        android:paddingTop="5dp"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:paddingTop="10sp"
         android:paddingBottom="5dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="5sp"
         android:background="@drawable/rounded_background"
         >
 
         <ImageButton
             android:background="@color/colorForeGround"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
             android:scaleType="fitCenter"
             android:id="@+id/img_viewer"
             android:src="@drawable/geforce"
@@ -32,22 +32,24 @@
             android:text="NVIDIA GeForce"
             android:textAllCaps="false"
             android:textColor="@color/colorText"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:background="@color/colorForeGround"/>
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="2sp"
             android:background="@drawable/green_border"/>
 
         <RatingBar
             android:id="@+id/scroller_rb"
-            android:layout_width="240dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorForeGround"
-            android:scaleX="0.5"
-            android:scaleY="0.5" />
+            style="?ratingBarStyleSmall"
+            android:numStars="5"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"/>
 
         <TextView
             android:id="@+id/scroller_price"
@@ -56,7 +58,7 @@
             android:textColor="@color/colorText"
             android:text="Price: $1000.00"
             android:gravity="center"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:fontFamily="sans-serif-black"/>
 
     </LinearLayout>

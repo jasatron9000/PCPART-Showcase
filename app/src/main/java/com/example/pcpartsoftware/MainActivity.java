@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         topPicks = new ArrayList<>(DataProvider.getInstance().getCat().getListbyRating(5));
 
-        Log.i("LOOOK AT MEE ", String.valueOf(DataProvider.getInstance().getCat().getCatalogue().size()));
+        //Log.i("LOOOK AT MEE ", String.valueOf(DataProvider.getInstance().getCat().getCatalogue().size()));
 
-        Integer[] imageNums = {topPicks.get(0).getProductImg(), topPicks.get(1).getProductImg(),
-                topPicks.get(2).getProductImg(), topPicks.get(3).getProductImg(),
-                topPicks.get(4).getProductImg()};
+        Integer[] imageNums = {topPicks.get(0).getProductImg()[0], topPicks.get(1).getProductImg()[0],
+                topPicks.get(2).getProductImg()[0], topPicks.get(3).getProductImg()[0],
+                topPicks.get(4).getProductImg()[0]};
 
 
         String[] imageNames = {topPicks.get(0).getProductName(), topPicks.get(1).getProductName(),

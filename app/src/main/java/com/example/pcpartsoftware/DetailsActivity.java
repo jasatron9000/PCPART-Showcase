@@ -56,8 +56,13 @@ public class DetailsActivity extends AppCompatActivity {
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
-                startActivity(intent);
+
+                switch(getIntent().getStringExtra("KEY")){
+                    case "Main":
+                        Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        break;
+                }
             }
         });
 

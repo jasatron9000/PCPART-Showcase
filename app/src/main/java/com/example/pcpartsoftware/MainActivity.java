@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     ArrayList<MainModel> mainModels;
     MainAdapter mainAdapter;
+    public static final String KEY = "KEY";
 
 
     @Override
@@ -118,10 +119,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch(menuItem.getItemId()){
             case R.id.nav_cpu:
                 Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+                intent.putExtra(KEY, "Main");
                 startActivity(intent);
                 break;
             case R.id.nav_logout:
                 Intent intent1 = new Intent(MainActivity.this, LoginActivity.class);
+                intent1.putExtra(KEY, "Main");
                 startActivity(intent1);
                 break;
         }

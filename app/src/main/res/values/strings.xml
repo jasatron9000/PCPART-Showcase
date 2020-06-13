@@ -5,6 +5,7 @@
     <string name="itemTitle"><font color="#80FAFBFB">Categories</font></string>
     <string name="top_picks">Top Picks</string>
     <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

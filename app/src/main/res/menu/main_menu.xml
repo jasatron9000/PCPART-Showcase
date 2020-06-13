@@ -11,10 +11,6 @@
             android:id="@+id/nav_logout"
             android:title="Log Out" />
 
-        <item
-            android:id="@+id/nav_home"
-            android:title="Home" />
-
     </group>
 
 

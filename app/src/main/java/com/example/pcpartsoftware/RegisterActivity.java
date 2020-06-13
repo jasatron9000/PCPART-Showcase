@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -76,6 +75,8 @@ public class RegisterActivity extends AppCompatActivity {
     private void gotoLoginActivity(){
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+
     }
 
     private void initialiseFields(){

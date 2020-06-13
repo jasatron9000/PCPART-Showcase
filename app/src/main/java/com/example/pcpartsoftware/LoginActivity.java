@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                     String name = dpClient.getClientByUsername(username).getName();
 
                     Toast.makeText(v.getContext(), "Welcome back, " + name, Toast.LENGTH_SHORT).show();
-                    gotoMainActivity();
+                    gotoMainActivity(username);
                 }
                 else{
                     Toast.makeText(v.getContext(), "Wrong Username or Password", Toast.LENGTH_SHORT).show();
@@ -63,9 +63,10 @@ public class LoginActivity extends AppCompatActivity {
     public void gotoRegisterActivity(){
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
-    public void gotoMainActivity(){
+    public void gotoMainActivity(String username){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

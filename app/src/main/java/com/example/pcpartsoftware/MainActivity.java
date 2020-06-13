@@ -12,10 +12,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -25,19 +27,23 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     //vars
-    DrawerLayout drawerLayout;
-    NavigationView navView;
-    Button hamburger;
-    RecyclerView recyclerView;
+    private DrawerLayout drawerLayout;
+    private NavigationView navView;
+    private Button hamburger;
+    private RecyclerView recyclerView;
+    private TextView clientName;
 
-    ArrayList<MainModel> mainModels;
-    MainAdapter mainAdapter;
+    private ArrayList<MainModel> mainModels;
+    private MainAdapter mainAdapter;
 
+    private Client currentClient;
+    private DataProvider dp = DataProvider.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         // Assign and initialise variables
         hamburger = (Button) findViewById(R.id.button);
@@ -92,6 +98,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View hamburger) {
                 drawerLayout.openDrawer(GravityCompat.START);
+                clientName = (TextView) findViewById(R.id.username_menu);
+                clientName.setText(dp.getcDB().getCurrentClient().getName());
             }
         });
 
@@ -99,7 +107,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //set navView to 'listen for clicks in drawer'
         navView.setNavigationItemSelectedListener(this);
 
-        //
     }
 
     @Override

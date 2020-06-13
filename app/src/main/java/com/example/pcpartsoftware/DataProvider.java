@@ -1,5 +1,8 @@
 package com.example.pcpartsoftware;
 
+import android.content.Context;
+import android.content.res.Resources;
+
 public class DataProvider {
     private static DataProvider instance_dp = null;
     private ClientDatabase cDB;
@@ -30,9 +33,11 @@ public class DataProvider {
     }
 
     private void generateProducts(){
+        String data = Resources.getSystem().getString(R.string.descr);
+
         System.out.println("Products Generated \n");
 
-        this.cat.addToList("Intel i7", "$400.00", "CPU",
+        this.cat.addToList("data", "$400.00", "CPU",
                 4.5, 10);
 
         this.cat.addToList("AMD Ryzen 7", "$350.00", "CPU",

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class ClientDatabase {
     private ArrayList<Client> clientArrayList;
+    private Client currentClient;
 
     public ClientDatabase(){
         clientArrayList = new ArrayList<Client>();
@@ -15,6 +16,9 @@ public class ClientDatabase {
         for (Client client : this.clientArrayList) {
             if (client.getUsername().equals(username) && client.getPassword().equals(password)) {
                 doesCredentialExist = true;
+
+                //Let this particular user be the currentClient
+                currentClient = client;
                 break;
             }
         }
@@ -42,5 +46,9 @@ public class ClientDatabase {
             this.clientArrayList.add(new Client(name, email, username, password, phoneNumber, address));
             return true;
         }
+    }
+
+    public Client getCurrentClient() {
+        return currentClient;
     }
 }

@@ -66,7 +66,7 @@ public class Catalogue {
     }
 
     public ArrayList<Product> getListbyRating(int length){
-        ArrayList<Product> unsorted = this.catalogue;
+        ArrayList<Product> unsorted = new ArrayList<>(this.catalogue);
         ArrayList<Product> sorted = new ArrayList<Product>();
         ArrayList<Product> finalOut = new ArrayList<Product>();
 

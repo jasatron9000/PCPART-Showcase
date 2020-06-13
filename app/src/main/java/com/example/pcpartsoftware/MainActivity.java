@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Button hamburger;
     private RecyclerView recyclerView;
     private TextView clientName;
+    private TextView clientUsername;
     private ImageButton searchButton;
 
     private ArrayList<MainModel> mainModels;
@@ -42,7 +44,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ListActivityRecyclerHandler cpuSelection;
     private ListActivityRecyclerHandler ramSelection;
 
-    private Client currentClient;
     private DataProvider dp = DataProvider.getInstance();
 
     @Override
@@ -124,12 +125,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View hamburger) {
                 drawerLayout.openDrawer(GravityCompat.START);
-                clientName = (TextView) findViewById(R.id.username_menu);
-                if(currentClient != null){
+                clientName = (TextView) findViewById(R.id.propername_menu);
+                clientUsername = (TextView) findViewById(R.id.username_menu);
+                if(dp.getcDB().getCurrentClient() != null){
                     clientName.setText(dp.getcDB().getCurrentClient().getName());
+                    clientUsername.setText("@" + dp.getcDB().getCurrentClient().getUsername());
                 }
                 else{
                     clientName.setText("No_Name");
+                    clientUsername.setText("@" + "No Username");
                 }
             }
         });

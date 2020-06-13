@@ -1,5 +1,8 @@
 package com.example.pcpartsoftware;
 
+import android.util.Log;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class ClientDatabase {
@@ -14,11 +17,12 @@ public class ClientDatabase {
         boolean doesCredentialExist = false;
 
         for (Client client : this.clientArrayList) {
+
             if (client.getUsername().equals(username) && client.getPassword().equals(password)) {
                 doesCredentialExist = true;
 
                 //Let this particular user be the currentClient
-                currentClient = client;
+                currentClient = new Client(client);
                 break;
             }
         }
@@ -49,6 +53,7 @@ public class ClientDatabase {
     }
 
     public Client getCurrentClient() {
-        return currentClient;
+        System.out.println(currentClient.getName());
+        return new Client(this.currentClient);
     }
 }

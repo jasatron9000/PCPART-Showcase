@@ -20,6 +20,14 @@ public class LoginActivity extends AppCompatActivity {
     private ClientDatabase dpClient = DataProvider.getInstance().getcDB();
 
     @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+
+        //Minimised the Application
+        LoginActivity.this.moveTaskToBack(true);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
@@ -58,6 +66,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
 
     public void gotoRegisterActivity(){
@@ -68,6 +78,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void gotoMainActivity(String username){
         Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("LoginIntent", "fromLogin");
         startActivity(intent);
     }
 }

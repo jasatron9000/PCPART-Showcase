@@ -38,14 +38,6 @@ class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.ViewHolder> {
 
         holder.imageView.setImageResource(detailsModels.get(position).getImage());
 
-        //make img clickable
-        holder.imageView.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "It also works!", Toast.LENGTH_SHORT).show();
-            }
-        });
 
     }
 

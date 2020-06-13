@@ -32,7 +32,7 @@ public class DataProvider {
     private void generateProducts(){
         System.out.println("Products Generated \n");
 
-        String specs = "Specs:\n\t\t\t\t\t\t\t\t\t\t\t- Memory Size: 8GB\n\t\t\t\t\t\t\t\t\t\t\t- " +
+        String specs = "\nSpecs:\n\t\t\t\t\t\t\t\t\t\t\t- Memory Size: 8GB\n\t\t\t\t\t\t\t\t\t\t\t- " +
                 "Base Clock Speed: 1465MHz\n\t\t\t\t\t\t\t\t\t\t\t- Boost Clock Speed: 1725MHz\n\t\t\t\t\t\t\t\t\t\t\t- " +
                 "Max Displays: 6\n\t\t\t\t\t\t\t\t\t\t\t- Length: 270mm\n\t\t\t\t\t\t\t\t\t\t\t- Display Ports: 3 \n\n\n\n\n\n\n";
 

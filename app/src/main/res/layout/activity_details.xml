@@ -8,7 +8,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/actionBarGeneralSize"
         android:background="@color/colorBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -16,9 +16,9 @@
 
         <ImageButton
             android:id="@+id/arrow_details"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_arrow_back" />
+            android:layout_width="@dimen/actionBarGeneralSize"
+            android:layout_height="@dimen/actionBarGeneralSize"
+            android:background="@drawable/ic_backarrow" />
 
         <TextView
             android:id="@+id/page_title_bar"
@@ -29,7 +29,7 @@
             android:gravity="center"
             android:text="Product Details"
             android:textColor="@color/colorText"
-            android:textSize="20dp" />
+            style="@style/H5_Med" />
 
     </androidx.appcompat.widget.Toolbar>
 

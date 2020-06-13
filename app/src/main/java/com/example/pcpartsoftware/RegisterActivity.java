@@ -14,6 +14,8 @@ import java.util.ArrayList;
 
 public class RegisterActivity extends AppCompatActivity {
     private ArrayList<EditText> listOfFields = new ArrayList<>();
+    private Catalogue dpCat = DataProvider.getInstance().getCat();
+    private ClientDatabase dpClient = DataProvider.getInstance().getcDB();
 
     private Button registerButton;
     private Button loginButton;
@@ -41,6 +43,24 @@ public class RegisterActivity extends AppCompatActivity {
                         Toast.makeText(RegisterActivity.this, "Do not leave any fields blank.", Toast.LENGTH_SHORT).show();
                         return;
                     }
+                }
+
+                //Get the string
+                String firstName = listOfFields.get(0).getText().toString();
+                String lastName = listOfFields.get(1).getText().toString();
+                String email = listOfFields.get(2).getText().toString();
+                int PhoneNumber = Integer.parseInt(listOfFields.get(3).getText().toString());
+                String address = listOfFields.get(4).getText().toString();
+                String username = listOfFields.get(5).getText().toString();
+                String password = listOfFields.get(6).getText().toString();
+
+
+                if(dpClient.addNewUser(username, password, email, PhoneNumber, firstName + " " + lastName, address)){
+                    Toast.makeText(RegisterActivity.this, "Account Created. Welcome " + firstName, Toast.LENGTH_SHORT).show();
+                    gotoLoginActivity();
+                }
+                else{
+                    Toast.makeText(RegisterActivity.this, username + " already exists. Try again.", Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -16,7 +16,8 @@ public class LoginActivity extends AppCompatActivity {
     private Button loginButton;
     private Button registerButton;
 
-    private DataProvider dp = DataProvider.getInstance();
+    private Catalogue dpCat = DataProvider.getInstance().getCat();
+    private ClientDatabase dpClient = DataProvider.getInstance().getcDB();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +37,11 @@ public class LoginActivity extends AppCompatActivity {
                 String username = usernameInfo.getText().toString();
                 String password = passwordInfo.getText().toString();
 
-                if(dp.getcDB().checkCredentials(username, password)){
-                    Toast.makeText(v.getContext(), "Access Granted", Toast.LENGTH_SHORT).show();
+                if(dpClient.checkCredentials(username, password)){
+                    String name = dpClient.getClientByUsername(username).getName();
+
+                    Toast.makeText(v.getContext(), "Welcome back, " + name, Toast.LENGTH_SHORT).show();
+                    gotoMainActivity();
                 }
                 else{
                     Toast.makeText(v.getContext(), "Wrong Username or Password", Toast.LENGTH_SHORT).show();
@@ -58,6 +62,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public void gotoRegisterActivity(){
         Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoMainActivity(){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

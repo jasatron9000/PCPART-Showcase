@@ -1,6 +1,6 @@
 package com.example.pcpartsoftware;
 
-public class Client {
+public class Client{
     private final int clientID;
     private final String name;
     private final String username;

@@ -32,19 +32,19 @@ public class DataProvider {
     private void generateProducts(){
         System.out.println("Products Generated \n");
 
-        String specs = "<b><i>Specs:</i></b>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t- Memory Size: 8GB\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t-\n" +
-                "        Base Clock Speed: 1465MHz\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t- Boost Clock Speed: 1725MHz\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t-\n" +
-                "        Max Displays: 6\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t- Length: 270mm\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t- Display Ports: 3";
+        String specs = "Specs:\n\t\t\t\t\t\t\t\t\t\t\t- Memory Size: 8GB\n\t\t\t\t\t\t\t\t\t\t\t- " +
+                "Base Clock Speed: 1465MHz\n\t\t\t\t\t\t\t\t\t\t\t- Boost Clock Speed: 1725MHz\n\t\t\t\t\t\t\t\t\t\t\t- " +
+                "Max Displays: 6\n\t\t\t\t\t\t\t\t\t\t\t- Length: 270mm\n\t\t\t\t\t\t\t\t\t\t\t- Display Ports: 3 \n\n\n\n\n\n\n";
 
-        String description = "\\n<b><i>Description:</i></b>\\n\\n\n" +
+        String description = "\nDescription:\n\n" +
                 "\n" +
-                "        Great gaming experiences are created by bending the rules.\n" +
-                "        The AMD Radeon™ RX 5700 Series GPUs defy conventions with an all-new 7nm process infused with RDNA\n" +
-                "        architecture that is specifically tuned for the perfect 1440p gaming experience. More efficient processing\n" +
-                "        power handles advanced 3D effects with ease, and 8GB of high-speed GDDR6 VRAM provides ample storage for\n" +
-                "        the detailed textures, meshes, and effects of modern games. Industry-leading software and\n" +
-                "        frequent driver upgrades push the experience even further, enabling overclocking,\n" +
-                "        gameplay recording, and more.\\n\\n";
+                "Great gaming experiences are created by bending the rules.\n" +
+                "The AMD Radeon™ RX 5700 Series GPUs defy conventions with an all-new 7nm process infused with RDNA\n" +
+                "architecture that is specifically tuned for the perfect 1440p gaming experience. More efficient processing\n" +
+                "power handles advanced 3D effects with ease, and 8GB of high-speed GDDR6 VRAM provides ample storage for\n" +
+                "the detailed textures, meshes, and effects of modern games. Industry-leading software and\n" +
+                "frequent driver upgrades push the experience even further, enabling overclocking,\n" +
+                "gameplay recording, and more.\n\n\n\n\n\n\n";
 
 
         String over = "Dear students, \n" +

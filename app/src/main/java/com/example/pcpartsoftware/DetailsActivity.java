@@ -27,6 +27,7 @@ public class DetailsActivity extends AppCompatActivity {
     ImageButton arrow;
     BottomNavigationView detNav;
     TextView targetText;
+    TextView titleText;
 
     Product currentProd;
 
@@ -47,6 +48,7 @@ public class DetailsActivity extends AppCompatActivity {
         currentProd = currentIntent.getParcelableExtra("PROD");
 
         targetText = findViewById(R.id.details_text);
+        titleText = findViewById(R.id.details_title);
 
 
         detNav = findViewById(R.id.nav_details);
@@ -60,6 +62,9 @@ public class DetailsActivity extends AppCompatActivity {
         String name = currentProd.getProductName();
         String price = currentProd.getProductPrice();
         //float rating = currentIntent.getFloatExtra("RTG");
+
+        targetText.setText(over);
+        titleText.setText("Overview");
 
         //initialise ArrayList
         for (int i = 0; i < imageNumsDet.length; i++){
@@ -115,12 +120,15 @@ public class DetailsActivity extends AppCompatActivity {
                     switch(menuItem.getItemId()){
                         case R.id.nav_overview_det:
                             targetText.setText(over);
+                            titleText.setText("Overview");
                             break;
                         case R.id.nav_specs_det:
                             targetText.setText(spec);
+                            titleText.setText("Specifications");
                             break;
                         case R.id.nav_desc_det:
                             targetText.setText(desc);
+                            titleText.setText("Description");
                             break;
                     }
                     return true;

@@ -4,13 +4,12 @@
         <item>AMD Ryzen 9 3900X</item>
         <item>$825.00</item>
         <item>4.74</item>
-        <item>
-            # of Cores : 12\n
-            # of Threads : 24\n
-            Base Clock 3.8 GHz\n
-            Max Boost Clock 4.6 GHz\n
-            CPU Socket: AMD AM4\n
-            Default TDP/ TDP : 105W\n
+        <item>\n - Number of Cores : 12\n
+            - Number of Threads : 24\n
+            - Base Clock 3.8 GHz\n
+            - Max Boost Clock 4.6 GHz\n
+            - CPU Socket: AMD AM4\n
+            - Default TDP/ TDP : 105W\n\n
 
         </item>
         <item>
@@ -31,13 +30,12 @@
         <item>AMD Ryzen 5 3600</item>
         <item>$343.85</item>
         <item>5.0</item>
-        <item>
-            # of Cores : 6\n
-            # of Threads :12\n
-            Base Clock 3.6 GHz\n
-            Max Boost Clock 4.2 GHz\n
-            CPU Socket: AMD AM4\n
-            Default TDP/ TDP : 65W\n
+        <item>\n - Number of Cores : 6\n
+            - Number of Threads :12\n
+            - Base Clock 3.6 GHz\n
+            - Max Boost Clock 4.2 GHz\n
+            - CPU Socket: AMD AM4\n
+            - Default TDP/ TDP : 65W\n\n
         </item>
         <item>
             Elite caliber experiences on competitive titles. Simultaneous play and capture from one
@@ -57,13 +55,12 @@
         <item>AMD Ryzen Threadripper 3990X</item>
         <item>$7358.85</item>
         <item>4.5</item>
-        <item>
-            # of Cores : 64\n
-            # of Threads : 128\n
-            Base Clock 2.9 GHz\n
-            Max Boost Clock Up to 4.3 GHz\n
-            CPU Socket: AMD sTRX4\n
-            Default TDP/ TDP : 280W\n
+        <item>\n - of Cores : 64\n
+            - Number of Threads : 128\n
+            - Base Clock 2.9 GHz\n
+            - Max Boost Clock Up to 4.3 GHz\n
+            - CPU Socket: AMD sTRX4\n
+            - Default TDP/ TDP : 280W\n\n
         </item>
         <item>
             64 cores provide an astonishing 128 threads of simultaneous multi-processing power,
@@ -87,13 +84,12 @@
         <item>AMD Ryzen Threadripper 3970X</item>
         <item>$3678.85</item>
         <item>4.7</item>
-        <item>
-            # of Cores : 32\n
-            # of Threads : 64\n
-            Base Clock 3.7 GHz\n
-            Max Boost Clock 4.5 GHz\n
-            CPU Socket: AMD sTRX4\n
-            Default TDP/ TDP : NA\n
+        <item>\n - Number of Cores : 32\n
+            - Number of Threads : 64\n
+            - Base Clock 3.7 GHz\n
+            - Max Boost Clock 4.5 GHz\n
+            - CPU Socket: AMD sTRX4\n
+            - Default TDP/ TDP : NA\n\n
         </item>
         <item>
             Do everything, all at the same time. Render. Stream. Compile. Encode. Work and Play.
@@ -119,13 +115,12 @@
         <item>AMD Ryzen 9 3900X</item>
         <item>$825.00</item>
         <item>4.74</item>
-        <item>
-            # of Cores : 12\n
-            # of Threads : 24\n
-            Base Clock 3.8 GHz\n
-            Max Boost Clock 4.6 GHz\n
-            CPU Socket: AMD AM4\n
-            Default TDP/ TDP : 105W\n
+        <item>\n - Number of Cores : 12\n
+            - Number of Threads : 24\n
+            - Base Clock 3.8 GHz\n
+            - Max Boost Clock 4.6 GHz\n
+            - CPU Socket: AMD AM4\n
+            - Default TDP/ TDP : 105W\n\n
 
         </item>
         <item>
@@ -146,13 +141,12 @@
         <item>Intel Coffee Lake Core i9 9900K</item>
         <item>$889.00</item>
         <item>4.5</item>
-        <item>
-            # of Cores : 8\n
-            # of Threads :  16\n
-            Base Clock 3.6GHz\n
-            Max Boost Clock 5.0GHz\n
-            CPU Socket: Intel LGA1151\n
-            Default TDP/ TDP :95 W\n
+        <item>\n - Number of Cores : 8\n
+            - Number of Threads :  16\n
+            - Base Clock 3.6GHz\n
+            - Max Boost Clock 5.0GHz\n
+            - CPU Socket: Intel LGA1151\n
+            - Default TDP/ TDP :95 W\n\n
 
         </item>
         <item>
@@ -172,13 +166,12 @@
         <item>Intel Coffee Lake Core i5 9400F</item>
         <item>$264.99</item>
         <item>5.0</item>
-        <item>
-           # of Cores : 6\n
-            # of Threads : 6\n
-            Base Clock 2.90 GHz\n
-            Max Boost Clock4.10 GHz\n
-            CPU Socket: Intel LGA1151\n
-            Default TDP/ TDP : 65W\n
+        <item>\n - Number of Cores : 6\n
+            - Number of Threads : 6\n
+            - Base Clock 2.90 GHz\n
+            - Max Boost Clock4.10 GHz\n
+            - CPU Socket: Intel LGA1151\n
+            - Default TDP/ TDP : 65W\n\n
 
         </item>
         <item>
@@ -201,13 +194,12 @@
         <item>Intel Coffee Lake Core i7 9700</item>
         <item>$595.00</item>
         <item>5.0</item>
-        <item>
-            # of Cores : 8\n
-            # of Threads : 8\n
-            Base Clock 3GHz\n
-            Max Boost Clock 4.7GHz\n
-            CPU Socket: Intel LGA1151\n
-            Default TDP/ TDP : 65 W\n
+        <item>\n - Number of Cores : 8\n
+            - Number of Threads : 8\n
+            - Base Clock 3GHz\n
+            - Max Boost Clock 4.7GHz\n
+            - CPU Socket: Intel LGA1151\n
+            - Default TDP/ TDP : 65 W\n\n
 
         </item>
         <item>
@@ -228,13 +220,12 @@
         <item>Intel Coffee Lake Core i3 9100</item>
         <item>$214.99</item>
         <item>4.2</item>
-        <item>
-            # of Cores : 4\n
-            # of Threads : 4\n
-            Base Clock 3.60 GHz\n
-            Max Boost Clock 4.20 GHz\n
-            CPU Socket: Intel LGA1151\n
-            Default TDP/ TDP : 65 W\n
+        <item>\n - Number of Cores : 4\n
+            - Number of Threads : 4\n
+            - Base Clock 3.60 GHz\n
+            - Max Boost Clock 4.20 GHz\n
+            - CPU Socket: Intel LGA1151\n
+            - Default TDP/ TDP : 65 W\n\n
 
         </item>
         <item>
@@ -253,13 +244,12 @@
         <item>Intel Xeon W-2195</item>
         <item>$4488 99</item>
         <item>3.5</item>
-        <item>
-            # of Cores :18\n
-            # of Threads : 36\n
-            Base Clock 2.3GHz\n
-            Max Boost Clock 4.3GHz\n
-            CPU Socket: Intel LGA2066\n
-            Default TDP/ TDP : 140 W\n
+        <item>\n - Number of Cores :18\n
+            - Number of Threads : 36\n
+            - Base Clock 2.3GHz\n
+            - Max Boost Clock 4.3GHz\n
+            - CPU Socket: Intel LGA2066\n
+            - Default TDP/ TDP : 140 W\n\n
 
         </item>
         <item>

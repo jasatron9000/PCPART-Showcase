@@ -24,7 +24,7 @@
             android:id="@+id/page_title_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="20sp"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
             android:text="Product Details"
@@ -56,24 +56,24 @@
 
                 <ImageView
                     android:id="@+id/green_border_main1"
-                    android:layout_width="393dp"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="2dp"
+                    android:layout_width="39sp"
+                    android:layout_height="2sp"
+                    android:layout_marginTop="2sp"
                     android:background="@drawable/green_border"
                     app:layout_constraintTop_toBottomOf="@+id/search_btn" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycler_view_details"
-                    android:layout_width="392dp"
-                    android:layout_height="392dp"
+                    android:layout_width="392sp"
+                    android:layout_height="392sp"
                     android:visibility="visible" />
 
 
                 <ImageView
                     android:id="@+id/green_border_main2"
-                    android:layout_width="393dp"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="2dp"
+                    android:layout_width="393sp"
+                    android:layout_height="2sp"
+                    android:layout_marginTop="2sp"
                     android:background="@drawable/green_border"
                     app:layout_constraintTop_toBottomOf="@+id/search_btn" />
 
@@ -107,7 +107,7 @@
                     android:paddingLeft="20sp"
                     android:paddingRight="10sp"
                     android:textColor="@color/colorText"
-                    android:textSize="20dp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/details_pricetxt"
@@ -160,7 +160,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_details"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="65sp"
         android:background="@color/colorBackground"
         app:itemIconTint="@color/colorAccent"
         app:itemTextColor="@color/colorText"

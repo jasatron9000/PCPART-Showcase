@@ -1,16 +1,19 @@
 package com.example.pcpartsoftware;
 
+import android.content.Context;
+import android.content.res.Resources;
+import android.util.Log;
+
 public class DataProvider {
     private static DataProvider instance_dp = null;
+    private static Boolean hasDataCreated;
     private ClientDatabase cDB;
     private Catalogue cat;
 
     private DataProvider(){
         cDB = new ClientDatabase();
         cat = new Catalogue();
-
-        generateUsers();
-        generateProducts();
+        hasDataCreated = false;
     }
 
     public static DataProvider getInstance(){
@@ -18,7 +21,21 @@ public class DataProvider {
             instance_dp = new DataProvider();
         }
 
+
         return instance_dp;
+    }
+
+    public void generateItems(Context context){
+        if(!hasDataCreated){
+            Log.i("DATA", "The data is being generated");
+            generateUsers();
+            generateProducts(context);
+        }
+        else{
+            Log.i("DATA", "The data has already been created");
+        }
+
+        hasDataCreated = true;
     }
 
     private void generateUsers(){
@@ -29,7 +46,7 @@ public class DataProvider {
         this.cDB.addNewUser("guest", "password", "guest@gmail.com", "0210000000", "Guest Account","13 Guest Rd.");
     }
 
-    private void generateProducts(){
+    private void generateProducts(Context context){
         System.out.println("Products Generated \n");
 
         String specs = "\n\t\t\t\t\t\t\t\t\t\t\t- Memory Size: 8GB\n\t\t\t\t\t\t\t\t\t\t\t- " +
@@ -45,12 +62,54 @@ public class DataProvider {
                 "\n\n\n\n\n\n\n";
 
         int[] img1 =  {R.drawable.geforce, R.drawable.gigabyte, R.drawable.i9};
-        this.cat.addToList("Intel i7", "$400.00", "CPU",
-                4.5, img1, specs, description, over);
-
         int[] img2 =  {R.drawable.gigabyte, R.drawable.i9, R.drawable.radeon};
-        this.cat.addToList("AMD Ryzen 7", "$350.00", "CPU",
-                4.9, img2, specs, description, over);
+        Resources res = context.getResources();
+        String[] current;
+
+        current = res.getStringArray(R.array.cpu1);
+        this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
+                img1, current[3], current[4], over);
+
+        current = res.getStringArray(R.array.cpu2);
+        this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
+                img1, current[3], current[4], over);
+
+        current = res.getStringArray(R.array.cpu3);
+        this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
+                img1, current[3], current[4], over);
+
+        current = res.getStringArray(R.array.cpu4);
+        this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
+                img1, current[3], current[4], over);
+
+        current = res.getStringArray(R.array.cpu5);
+        this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
+                img1, current[3], current[4], over);
+
+        current = res.getStringArray(R.array.cpu6);
+        this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
+                img1, current[3], current[4], over);
+
+        current = res.getStringArray(R.array.cpu7);
+        this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
+                img1, current[3], current[4], over);
+
+        current = res.getStringArray(R.array.cpu8);
+        this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
+                img1, current[3], current[4], over);
+
+        current = res.getStringArray(R.array.cpu9);
+        this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
+                img1, current[3], current[4], over);
+
+        current = res.getStringArray(R.array.cpu10);
+        this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
+                img1, current[3], current[4], over);
+
+        current = res.getStringArray(R.array.cpu1);
+        this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
+                img1, current[3], current[4], over);
+
 
         int[] img3 =  {R.drawable.i9, R.drawable.radeon, R.drawable.threadripper};
         this.cat.addToList("AMD Vega", "$420.69", "GPU",

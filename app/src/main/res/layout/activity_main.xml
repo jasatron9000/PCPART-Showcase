@@ -99,7 +99,7 @@
                     android:background="@drawable/green_border"/>
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/ram_select"
+                    android:id="@+id/gpu_select"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/actionBarGapSize"/>
@@ -132,7 +132,7 @@
                     tools:ignore="RtlSymmetry" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/gpu_select"
+                    android:id="@+id/ram_select"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/actionBarGapSize"/>

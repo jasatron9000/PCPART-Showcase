@@ -183,4 +183,16 @@
             performance even higher.\n\n\n</item>
     </string-array>
 
+    <array name="ram_list">
+        <item>@array/ram_1</item>
+        <item>@array/ram_2</item>
+        <item>@array/ram_3</item>
+        <item>@array/ram_4</item>
+        <item>@array/ram_5</item>
+        <item>@array/ram_6</item>
+        <item>@array/ram_7</item>
+        <item>@array/ram_8</item>
+        <item>@array/ram_9</item>
+        <item>@array/ram_10</item>
+    </array>
 </resources>

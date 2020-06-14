@@ -69,7 +69,6 @@ public class DetailsActivity extends AppCompatActivity {
 
         //Create img array for recycler
         int[] imageNumsDet = currentProd.getProductImg();
-        over = currentProd.getOverview();
         desc = currentProd.getDescr();
         spec = currentProd.getSpecs();
         String name = currentProd.getProductName();

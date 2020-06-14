@@ -36,6 +36,7 @@ class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
+        //set the images
         holder.imageView.setImageResource(detailsModels.get(position).getImage());
 
 

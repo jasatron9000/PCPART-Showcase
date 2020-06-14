@@ -7,6 +7,7 @@ public class MainModel {
     float ratingBar;
     String prices;
 
+    //constructor
     public MainModel(Integer image, String imgName, float ratingBar, String prices){
         this.image = image;
         this.imgName = imgName;
@@ -14,6 +15,7 @@ public class MainModel {
         this.prices = prices;
     }
 
+    //Getters:
 
     public Integer getImage() {
         return image;

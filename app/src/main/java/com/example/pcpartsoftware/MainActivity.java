@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mainModels = new ArrayList<>();
         searchButton = findViewById(R.id.search_btn);
 
+        //Create arraylists for the MainModel
         ArrayList<Integer> imageNumsList = new ArrayList<>();
         ArrayList<String> imageNamesList = new ArrayList<>();
         ArrayList<Float> ratingsList = new ArrayList<>();
@@ -72,8 +73,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         topPicks = new ArrayList<>(DataProvider.getInstance().getCat().getListbyRating(5));
         intialiseOtherSelection();
 
-        //Log.i("LOOOK AT MEE ", String.valueOf(DataProvider.getInstance().getCat().getCatalogue().size()));
-
+        //add values to the arraylists
         for(int i = 0; i < topPicks.size(); i++){
 
             imageNumsList.add(topPicks.get(i).getProductImg()[0]);
@@ -143,6 +143,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //
     }
 
+    //Code to stop the back button from exiting the app on press when the nav drawer is open
     @Override
     public void onBackPressed() {
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
@@ -155,6 +156,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    //Code for navigation to different activities through the drawer
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
@@ -183,6 +185,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
+    //Code to get GPU, CPU and RAM selections for the items by category
     private void intialiseOtherSelection(){
         String[] category = new String[]{"CPU", "GPU", "RAM"};
         ArrayList<ArrayList<Product>> listOfProductArray = new ArrayList<>();
@@ -207,6 +210,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
+    //function for ease-of-use when navigating to main
     private void gotoMainActivity(String key, String code){
         //creating a new intent with current context and next activity class args
         Intent intentRAM = new Intent(MainActivity.this, ListActivity.class);

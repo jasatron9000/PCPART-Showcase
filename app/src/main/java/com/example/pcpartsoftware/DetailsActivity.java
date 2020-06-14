@@ -23,6 +23,7 @@ import java.util.ArrayList;
 
 public class DetailsActivity extends AppCompatActivity {
 
+    //Assign variables
     RecyclerView recyclerView;
 
     ArrayList<DetailsModel> detailModels;
@@ -35,7 +36,6 @@ public class DetailsActivity extends AppCompatActivity {
     RatingBar rb;
     TextView rating;
     TextView gst;
-    //int size = 100;
 
     Product currentProd;
 
@@ -47,12 +47,16 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
+        //Buttons, text and images
         arrow = findViewById(R.id.arrow_details);
         recyclerView = findViewById(R.id.recycler_view_details);
         detailModels = new ArrayList<>();
+
+        //get parsed product
         final Intent currentIntent = getIntent();
         currentProd = currentIntent.getParcelableExtra("PROD");
 
+        //set text and ratings
         targetText = findViewById(R.id.details_text);
         titleText = findViewById(R.id.details_title);
         priceText = findViewById(R.id.details_pricetxt);
@@ -60,9 +64,8 @@ public class DetailsActivity extends AppCompatActivity {
         rating = findViewById(R.id.usrrtg_details);
         gst = findViewById(R.id.gst_detail);
 
-        //targetText.setHeight(0);
 
-
+        //get bottom navigation bar to listen for click
         detNav = findViewById(R.id.nav_details);
         detNav.setOnNavigationItemSelectedListener(detNavListen);
 
@@ -72,9 +75,8 @@ public class DetailsActivity extends AppCompatActivity {
         spec = currentProd.getSpecs();
         String name = currentProd.getProductName();
         String price = currentProd.getProductPrice();
-        //float rating = currentIntent.getFloatExtra("RTG");
 
-        //targetText.setText(over);
+        //Set initial vals for text and rating
         titleText.setText(currentProd.getProductName());
         rb.setRating(currentProd.getProductRating());
         priceText.setText(currentProd.getProductPrice());
@@ -109,13 +111,14 @@ public class DetailsActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 switch(currentIntent.getStringExtra("KEY")){
+                    //go to main
                     case "Main":
                         Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
                         intent.putExtra("KEY", "Details");
                         startActivity(intent);
                         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                         break;
-
+                    //go to list
                     case "List":
                         Intent intent1 = new Intent(DetailsActivity.this, ListActivity.class);
                         intent1.putExtra("SORT BY","ALL");
@@ -125,8 +128,7 @@ public class DetailsActivity extends AppCompatActivity {
 
 
                 }
-                Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
-                startActivity(intent);
+
             }
         });
 
@@ -135,6 +137,7 @@ public class DetailsActivity extends AppCompatActivity {
 
     }
 
+    //function for the bottom navigation view
     private BottomNavigationView.OnNavigationItemSelectedListener detNavListen =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @RequiresApi(api = Build.VERSION_CODES.Q)
@@ -142,6 +145,7 @@ public class DetailsActivity extends AppCompatActivity {
                 public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
                     switch(menuItem.getItemId()){
+                        //case for when Overview is clicked
                         case R.id.nav_overview_det:
                             gst.setVisibility(View.VISIBLE);
                             rb.setVisibility(View.VISIBLE);
@@ -155,6 +159,8 @@ public class DetailsActivity extends AppCompatActivity {
                             rating.setText("User Rating: " + currentProd.getProductRating() + "\n\n\n\n\n\n\n\n\n");
 
                             break;
+
+                        //case for when specs is clicked
                         case R.id.nav_specs_det:
                             gst.setVisibility(View.INVISIBLE);
                             rb.setVisibility(View.INVISIBLE);
@@ -166,9 +172,9 @@ public class DetailsActivity extends AppCompatActivity {
                             targetText.setVisibility(View.VISIBLE);
                             targetText.setText(spec);
                             titleText.setText("Specifications");
-
-
                             break;
+
+                        //case for when description is clicked
                         case R.id.nav_desc_det:
                             gst.setVisibility(View.INVISIBLE);
                             rb.setVisibility(View.INVISIBLE);

@@ -232,7 +232,7 @@
         <item>@drawable/ram_6_3</item>
     </array>
 
-    <array name="cpu_7_img">
+    <array name="ram_7_img">
         <item>@drawable/ram_7_1</item>
         <item>@drawable/ram_7_2</item>
         <item>@drawable/ram_7_3</item>
@@ -255,5 +255,19 @@
         <item>@drawable/ram_10_2</item>
         <item>@drawable/ram_10_3</item>
     </array>
+
+    <array name="ram_imgs">
+        <item>@array/ram_1_img</item>
+        <item>@array/ram_2_img</item>
+        <item>@array/ram_3_img</item>
+        <item>@array/ram_4_img</item>
+        <item>@array/ram_5_img</item>
+        <item>@array/ram_6_img</item>
+        <item>@array/ram_7_img</item>
+        <item>@array/ram_8_img</item>
+        <item>@array/ram_9_img</item>
+        <item>@array/ram_10_img</item>
+    </array>
+
 
 </resources>

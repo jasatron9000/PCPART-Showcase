@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
 
+
         //initialise ArrayList
         for (int i = 0; i < imageNumsList.size(); i++){
             MainModel model = new MainModel(imageNumsList.get(i), imageNamesList.get(i),

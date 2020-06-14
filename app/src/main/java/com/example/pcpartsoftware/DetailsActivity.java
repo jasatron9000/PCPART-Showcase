@@ -39,7 +39,6 @@ public class DetailsActivity extends AppCompatActivity {
 
     Product currentProd;
 
-    String over;
     String desc;
     String spec;
 
@@ -51,7 +50,7 @@ public class DetailsActivity extends AppCompatActivity {
         arrow = findViewById(R.id.arrow_details);
         recyclerView = findViewById(R.id.recycler_view_details);
         detailModels = new ArrayList<>();
-        Intent currentIntent = getIntent();
+        final Intent currentIntent = getIntent();
         currentProd = currentIntent.getParcelableExtra("PROD");
 
         targetText = findViewById(R.id.details_text);
@@ -69,7 +68,6 @@ public class DetailsActivity extends AppCompatActivity {
 
         //Create img array for recycler
         int[] imageNumsDet = currentProd.getProductImg();
-        over = currentProd.getOverview();
         desc = currentProd.getDescr();
         spec = currentProd.getSpecs();
         String name = currentProd.getProductName();
@@ -110,18 +108,22 @@ public class DetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                switch(getIntent().getStringExtra("KEY")){
+                switch(currentIntent.getStringExtra("KEY")){
                     case "Main":
                         Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
                         intent.putExtra("KEY", "Details");
                         startActivity(intent);
+                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                         break;
 
                     case "List":
                         Intent intent1 = new Intent(DetailsActivity.this, ListActivity.class);
-                        intent1.putExtra("KEY", "Details");
+                        intent1.putExtra("SORT BY","ALL");
                         startActivity(intent1);
+                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                         break;
+
+
                 }
                 Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
                 startActivity(intent);

@@ -30,7 +30,7 @@ public class ListActivityRecyclerHandler{
             @Override
             public void activateOnClick(int pos) {
                 Intent intent = new Intent(v.getContext(), DetailsActivity.class);
-                intent.putExtra("KEY", "Main");
+                intent.putExtra("KEY", "List");
                 intent.putExtra("PROD", listAdapter.getProductByPos(pos));
                 v.getContext().startActivity(intent);
             }

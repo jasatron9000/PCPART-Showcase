@@ -32,6 +32,9 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
 
+        //Create the data when Login has been initiated
+        DataProvider.getInstance().generateItems(this.getApplicationContext());
+
         //Initialise the view class with their corresponding elements in the XML
         usernameInfo = findViewById(R.id.username);
         passwordInfo = findViewById(R.id.password);

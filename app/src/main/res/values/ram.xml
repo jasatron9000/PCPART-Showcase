@@ -183,6 +183,66 @@
             performance even higher.\n\n\n</item>
     </string-array>
 
+    <array name="ram_1_img">
+        <item>@drawable/ram_1_1</item>
+        <item>@drawable/ram_1_2</item>
+        <item>@drawable/ram_1_3</item>
+    </array>
+
+    <array name="ram_2_img">
+        <item>@drawable/ram_2_1</item>
+        <item>@drawable/ram_2_2</item>
+        <item>@drawable/ram_2_3</item>
+    </array>
+
+    <array name="ram_3_img">
+        <item>@drawable/ram_3_1</item>
+        <item>@drawable/ram_3_2</item>
+        <item>@drawable/ram_3_3</item>
+    </array>
+
+    <array name="ram_4_img">
+        <item>@drawable/ram_4_1</item>
+        <item>@drawable/ram_4_2</item>
+        <item>@drawable/ram_4_3</item>
+    </array>
+
+    <array name="ram_5_img">
+        <item>@drawable/ram_5_1</item>
+        <item>@drawable/ram_5_2</item>
+        <item>@drawable/ram_5_3</item>
+    </array>
+
+    <array name="ram_6_img">
+        <item>@drawable/ram_6_1</item>
+        <item>@drawable/ram_6_2</item>
+        <item>@drawable/ram_6_3</item>
+    </array>
+
+    <array name="cpu_7_img">
+        <item>@drawable/ram_8_1</item>
+        <item>@drawable/ram_8_2</item>
+        <item>@drawable/ram_8_3</item>
+    </array>
+
+    <array name="ram_8_img">
+        <item>@drawable/ram_9_1</item>
+        <item>@drawable/ram_9_2</item>
+        <item>@drawable/ram_9_3</item>
+    </array>
+
+    <array name="ram_9_img">
+        <item>@drawable/ram_9_1</item>
+        <item>@drawable/ram_9_2</item>
+        <item>@drawable/ram_9_3</item>
+    </array>
+
+    <array name="ram_10_img">
+        <item>@drawable/ram_10_1</item>
+        <item>@drawable/ram_10_2</item>
+        <item>@drawable/ram_10_3</item>
+    </array>
+
     <array name="ram_list">
         <item>@array/ram_1</item>
         <item>@array/ram_2</item>

@@ -3,6 +3,7 @@ package com.example.pcpartsoftware;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Catalogue {
 
@@ -100,6 +101,10 @@ public class Catalogue {
         }
 
         return finalOut;
+    }
+
+    public void shuffleCatalogue(){
+        Collections.shuffle(catalogue);
     }
 
 

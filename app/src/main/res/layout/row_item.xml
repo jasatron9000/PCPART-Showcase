@@ -22,7 +22,7 @@
             android:layout_height="200sp"
             android:scaleType="fitCenter"
             android:id="@+id/img_viewer"
-            android:src="@drawable/geforce"
+            android:src="@drawable/gpu_1"
             style="?borderlessButtonStyle"
             />
 

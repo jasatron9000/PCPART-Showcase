@@ -21,7 +21,7 @@
             android:layout_height="392sp"
             android:scaleType="fitCenter"
             android:id="@+id/img_slider_details"
-            android:src="@drawable/geforce"
+            android:src="@drawable/gpu_1"
             />
 
     </LinearLayout>

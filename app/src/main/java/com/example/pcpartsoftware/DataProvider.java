@@ -31,6 +31,7 @@ public class DataProvider {
             Log.i("DATA", "The data is being generated");
             generateUsers();
             generateProducts(context);
+            getCat().shuffleCatalogue();
         }
         else{
             Log.i("DATA", "The data has already been created");
@@ -50,13 +51,14 @@ public class DataProvider {
     private void generateProducts(Context context){
         System.out.println("Products Generated \n");
 
-        int[] img1 =  {R.drawable.geforce, R.drawable.gigabyte, R.drawable.i9};
-        int[] img2 =  {R.drawable.gigabyte, R.drawable.i9, R.drawable.radeon};
+        int[] imgCPU =  {R.drawable.cpu_1, R.drawable.cpu_2, R.drawable.cpu_3};
+        int[] imgGPU =  {R.drawable.gpu_1, R.drawable.gpu_2, R.drawable.gpu_3};
+        int[] imgRAM =  {R.drawable.ram_1, R.drawable.ram_2, R.drawable.ram_3};
         Resources res = context.getResources();
 
-        initialiseProducts(context, R.array.cpu_list, R.array.cpu_imgs, "CPU");
-        initialiseProducts(context, R.array.gpu_list, R.array.cpu_imgs, "GPU");
-        initialiseProducts(context, R.array.ram_list, R.array.cpu_imgs, "RAM");
+        initialiseProducts(context, R.array.cpu_list, imgCPU, "CPU");
+        initialiseProducts(context, R.array.gpu_list, imgGPU, "GPU");
+        initialiseProducts(context, R.array.ram_list, imgRAM, "RAM");
 
     }
 
@@ -68,45 +70,27 @@ public class DataProvider {
         return cat;
     }
 
-    private void initialiseProducts(Context context, int cData, int cImg, String Category){
+    private void initialiseProducts(Context context, int cData, int[] cImg, String Category){
         //Retrieve the data from the XML files
         Resources res = context.getResources();
         TypedArray data = res.obtainTypedArray(cData);
-        TypedArray imgs = res.obtainTypedArray(cImg);
 
         //Loop through the length of the data
         for(int i = 0; i < data.length(); i++){
             //Current Array
             int currDataID = data.getResourceId(i, 0);
-            int currImgID = data.getResourceId(i, 0);
 
             //Check if IDs are detected and if they do not exist a warning message is displayed
-            if(currDataID > 0 && currImgID > 0){
+            if(currDataID > 0){
 
                 //The information stored in the index of the array
                 String[] currentD = context.getResources().getStringArray(data.getResourceId(i, 0));
-                TypedArray currentImgArray = res.obtainTypedArray(currImgID);
-                int[] currentI = new int[3];
-
-                //Loops through the three image IDs and if the Id cannot be detected a placeholder
-                //image is used
-                for(int j = 0; j < currentImgArray.length(); j++){
-                    int indexedImage = currentImgArray.getResourceId(i, 0);
-
-                    if (indexedImage > 0){
-                        currentI[i] = indexedImage;
-                    }
-                    else{
-                        currentI[i] = R.drawable.geforce;
-                    }
-                }
 
                 //Load all the information to the category class
                 this.cat.addToList(currentD[0], currentD[1], Category, Double.parseDouble(currentD[2]),
-                        currentI, currentD[3], currentD[4]);
+                        cImg, currentD[3], currentD[4]);
 
                 Log.i("DATA LOAD", Category + ", " + currentD[0]);
-                currentImgArray.recycle();
 
             }
             else{
@@ -116,6 +100,5 @@ public class DataProvider {
 
         //Garbage Collection
         data.recycle();
-        imgs.recycle();
     }
 }

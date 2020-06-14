@@ -289,4 +289,77 @@
         <item>@array/cpu9</item>
         <item>@array/cpu10</item>
     </array>
+
+    <array name="cpu_1_img">
+        <item>@drawable/CPU_1_1</item>
+        <item>@drawable/CPU_1_2</item>
+        <item>@drawable/CPU_1_3</item>
+    </array>
+
+    <array name="cpu_2_img">
+        <item>@drawable/CPU_2_1</item>
+        <item>@drawable/CPU_2_2</item>
+        <item>@drawable/CPU_2_3</item>
+    </array>
+
+    <array name="cpu_3_img">
+        <item>@drawable/CPU_3_1</item>
+        <item>@drawable/CPU_3_2</item>
+        <item>@drawable/CPU_3_3</item>
+    </array>
+
+    <array name="cpu_4_img">
+        <item>@drawable/CPU_4_1</item>
+        <item>@drawable/CPU_4_2</item>
+        <item>@drawable/CPU_4_3</item>
+    </array>
+
+    <array name="cpu_5_img">
+        <item>@drawable/CPU_5_1</item>
+        <item>@drawable/CPU_5_2</item>
+        <item>@drawable/CPU_5_3</item>
+    </array>
+
+    <array name="cpu_6_img">
+        <item>@drawable/CPU_6_1</item>
+        <item>@drawable/CPU_6_2</item>
+        <item>@drawable/CPU_6_3</item>
+    </array>
+
+    <array name="cpu_7_img">
+        <item>@drawable/CPU_8_1</item>
+        <item>@drawable/CPU_8_2</item>
+        <item>@drawable/CPU_8_3</item>
+    </array>
+
+    <array name="cpu_8_img">
+        <item>@drawable/CPU_9_1</item>
+        <item>@drawable/CPU_9_2</item>
+        <item>@drawable/CPU_9_3</item>
+    </array>
+
+    <array name="cpu_9_img">
+        <item>@drawable/CPU_9_1</item>
+        <item>@drawable/CPU_9_2</item>
+        <item>@drawable/CPU_9_3</item>
+    </array>
+
+    <array name="cpu_10_img">
+        <item>@drawable/CPU_10_1</item>
+        <item>@drawable/CPU_10_2</item>
+        <item>@drawable/CPU_10_3</item>
+    </array>
+
+    <array name="cpu_imgs">
+        <item>@array/cpu_1_img</item>
+        <item>@array/cpu_2_img</item>
+        <item>@array/cpu_3_img</item>
+        <item>@array/cpu_4_img</item>
+        <item>@array/cpu_5_img</item>
+        <item>@array/cpu_6_img</item>
+        <item>@array/cpu_7_img</item>
+        <item>@array/cpu_8_img</item>
+        <item>@array/cpu_9_img</item>
+        <item>@array/cpu_10_img</item>
+    </array>
 </resources>

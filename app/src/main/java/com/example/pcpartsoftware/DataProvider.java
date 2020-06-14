@@ -54,9 +54,9 @@ public class DataProvider {
         int[] img2 =  {R.drawable.gigabyte, R.drawable.i9, R.drawable.radeon};
         Resources res = context.getResources();
 
-        initialiseProducts(context, R.array.cpu_list, img1, "CPU");
-        initialiseProducts(context, R.array.gpu_list, img1, "GPU");
-        initialiseProducts(context, R.array.ram_list, img1, "RAM");
+        initialiseProducts(context, R.array.cpu_list, R.array.cpu_imgs, "CPU");
+        initialiseProducts(context, R.array.gpu_list, R.array.cpu_imgs, "GPU");
+        initialiseProducts(context, R.array.ram_list, R.array.cpu_imgs, "RAM");
 
     }
 
@@ -68,23 +68,39 @@ public class DataProvider {
         return cat;
     }
 
-    private void initialiseProducts(Context context, int cData, int[] cImg, String Category){
+    private void initialiseProducts(Context context, int cData, int cImg, String Category){
         //Retrieve the data
         Resources res = context.getResources();
         TypedArray data = res.obtainTypedArray(cData);
+        TypedArray imgs = res.obtainTypedArray(cImg);
 
 
         for(int i = 0; i < data.length(); i++){
             //Current Array
-            int currID = data.getResourceId(i, 0);
+            int currDataID = data.getResourceId(i, 0);
+            int currImgID = data.getResourceId(i, 0);
 
-            if(currID > 0){
-                String[] current = context.getResources().getStringArray(data.getResourceId(i, 0));
+            if(currDataID > 0 && currImgID > 0){
+                String[] currentD = context.getResources().getStringArray(data.getResourceId(i, 0));
+                TypedArray currentImgArray = res.obtainTypedArray(currImgID);
+                int[] currentI = new int[3];
 
-                this.cat.addToList(current[0], current[1], Category, Double.parseDouble(current[2]),
-                        cImg, current[3], current[4]);
+                for(int j = 0; j < currentImgArray.length(); j++){
+                    int indexedImage = currentImgArray.getResourceId(i, 0);
 
-                Log.i("DATA LOAD", Category + ", " + current[0]);
+                    if (indexedImage > 0){
+                        currentI[i] = indexedImage;
+                    }
+                    else{
+                        currentI[i] = R.drawable.geforce;
+                    }
+                }
+
+                this.cat.addToList(currentD[0], currentD[1], Category, Double.parseDouble(currentD[2]),
+                        currentI, currentD[3], currentD[4]);
+
+                Log.i("DATA LOAD", Category + ", " + currentD[0]);
+                currentImgArray.recycle();
 
             }
             else{
@@ -93,6 +109,7 @@ public class DataProvider {
         }
 
         data.recycle();
+        imgs.recycle();
     }
 
 }

@@ -327,15 +327,15 @@
     </array>
 
     <array name="cpu_7_img">
-        <item>@drawable/cpu_8_1</item>
-        <item>@drawable/cpu_8_2</item>
-        <item>@drawable/cpu_8_3</item>
+        <item>@drawable/cpu_7_1</item>
+        <item>@drawable/cpu_7_2</item>
+        <item>@drawable/cpu_7_3</item>
     </array>
 
     <array name="cpu_8_img">
-        <item>@drawable/cpu_9_1</item>
-        <item>@drawable/cpu_9_2</item>
-        <item>@drawable/cpu_9_3</item>
+        <item>@drawable/cpu_8_1</item>
+        <item>@drawable/cpu_8_2</item>
+        <item>@drawable/cpu_8_3</item>
     </array>
 
     <array name="cpu_9_img">

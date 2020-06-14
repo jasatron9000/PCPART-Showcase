@@ -69,22 +69,27 @@ public class DataProvider {
     }
 
     private void initialiseProducts(Context context, int cData, int cImg, String Category){
-        //Retrieve the data
+        //Retrieve the data from the XML files
         Resources res = context.getResources();
         TypedArray data = res.obtainTypedArray(cData);
         TypedArray imgs = res.obtainTypedArray(cImg);
 
-
+        //Loop through the length of the data
         for(int i = 0; i < data.length(); i++){
             //Current Array
             int currDataID = data.getResourceId(i, 0);
             int currImgID = data.getResourceId(i, 0);
 
+            //Check if IDs are detected and if they do not exist a warning message is displayed
             if(currDataID > 0 && currImgID > 0){
+
+                //The information stored in the index of the array
                 String[] currentD = context.getResources().getStringArray(data.getResourceId(i, 0));
                 TypedArray currentImgArray = res.obtainTypedArray(currImgID);
                 int[] currentI = new int[3];
 
+                //Loops through the three image IDs and if the Id cannot be detected a placeholder
+                //image is used
                 for(int j = 0; j < currentImgArray.length(); j++){
                     int indexedImage = currentImgArray.getResourceId(i, 0);
 
@@ -96,6 +101,7 @@ public class DataProvider {
                     }
                 }
 
+                //Load all the information to the category class
                 this.cat.addToList(currentD[0], currentD[1], Category, Double.parseDouble(currentD[2]),
                         currentI, currentD[3], currentD[4]);
 
@@ -108,8 +114,8 @@ public class DataProvider {
             }
         }
 
+        //Garbage Collection
         data.recycle();
         imgs.recycle();
     }
-
 }

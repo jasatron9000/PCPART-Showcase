@@ -68,64 +68,64 @@ public class DataProvider {
 
         current = res.getStringArray(R.array.cpu1);
         this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
-                img1, current[3], current[4], over);
+                img1, current[3], current[4]);
 
         current = res.getStringArray(R.array.cpu2);
         this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
-                img1, current[3], current[4], over);
+                img1, current[3], current[4]);
 
         current = res.getStringArray(R.array.cpu3);
         this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
-                img1, current[3], current[4], over);
+                img1, current[3], current[4]);
 
         current = res.getStringArray(R.array.cpu4);
         this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
-                img1, current[3], current[4], over);
+                img1, current[3], current[4]);
 
         current = res.getStringArray(R.array.cpu5);
         this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
-                img1, current[3], current[4], over);
+                img1, current[3], current[4]);
 
         current = res.getStringArray(R.array.cpu6);
         this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
-                img1, current[3], current[4], over);
+                img1, current[3], current[4]);
 
         current = res.getStringArray(R.array.cpu7);
         this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
-                img1, current[3], current[4], over);
+                img1, current[3], current[4]);
 
         current = res.getStringArray(R.array.cpu8);
         this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
-                img1, current[3], current[4], over);
+                img1, current[3], current[4]);
 
         current = res.getStringArray(R.array.cpu9);
         this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
-                img1, current[3], current[4], over);
+                img1, current[3], current[4]);
 
         current = res.getStringArray(R.array.cpu10);
         this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
-                img1, current[3], current[4], over);
+                img1, current[3], current[4]);
 
         current = res.getStringArray(R.array.cpu1);
         this.cat.addToList(current[0], current[1], "CPU", Double.parseDouble(current[2]),
-                img1, current[3], current[4], over);
+                img1, current[3], current[4]);
 
 
         int[] img3 =  {R.drawable.i9, R.drawable.radeon, R.drawable.threadripper};
         this.cat.addToList("AMD Vega", "$420.69", "GPU",
-                3.5, img3, specs, description, over);
+                3.5, img3, specs, description);
 
         int[] img4 =  {R.drawable.radeon, R.drawable.threadripper, R.drawable.titanrtx};
         this.cat.addToList("NVIDIA GTX2080", "$690.42", "GPU",
-                5.0, img4, specs, description, over);
+                5.0, img4, specs, description);
 
         int[] img5 =  {R.drawable.threadripper, R.drawable.titanrtx, R.drawable.geforce};
         this.cat.addToList("Corsair 16GB RAM", "$70.00", "RAM",
-                4.5, img5, specs, description, over);
+                4.5, img5, specs, description);
 
         int[] img6 =  {R.drawable.titanrtx, R.drawable.radeon, R.drawable.i9};
         this.cat.addToList("Corsair 8GB RAM", "$80.00", "RAM",
-                3.0, img6, specs, description, over);
+                3.0, img6, specs, description);
 
 
 

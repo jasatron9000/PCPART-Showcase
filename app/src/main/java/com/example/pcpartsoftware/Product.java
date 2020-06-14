@@ -13,20 +13,18 @@ public class Product implements Parcelable {
     private int[] productImg;
     private String productCategory;
     private float productRating;
-    private String overview;
     private String specs;
     private String descr;
 
 
     public Product(String productName, String productPrice, String productCategory,
                    double productRating, int[] productImg, String specs,
-                   String descr, String overview) {
+                   String descr) {
         this.productName = productName;
         this.productPrice = productPrice;
         this.productCategory = productCategory;
         this.productRating = (float)productRating;
         this.productImg = productImg;
-        this.overview = overview;
         this.specs = specs;
         this.descr = descr;
         this.productID = this.count;
@@ -42,7 +40,6 @@ public class Product implements Parcelable {
         productImg = in.createIntArray();
         productCategory = in.readString();
         productRating = in.readFloat();
-        overview = in.readString();
         specs = in.readString();
         descr = in.readString();
     }
@@ -87,9 +84,6 @@ public class Product implements Parcelable {
         return descr;
     }
 
-    public String getOverview() {
-        return overview;
-    }
 
     public String getSpecs() {
         return specs;
@@ -109,7 +103,6 @@ public class Product implements Parcelable {
         dest.writeIntArray(productImg);
         dest.writeString(productCategory);
         dest.writeFloat(productRating);
-        dest.writeString(overview);
         dest.writeString(specs);
         dest.writeString(descr);
     }

@@ -203,4 +203,17 @@
             you should wait for partner cards to drop in the future, as they should offer equivalent
             performance at a lower price.\n\n\n </item>
     </string-array>
+
+    <array name="gpu_list">
+        <item>@array/gpu_1</item>
+        <item>@array/gpu_2</item>
+        <item>@array/gpu_3</item>
+        <item>@array/gpu_4</item>
+        <item>@array/gpu_5</item>
+        <item>@array/gpu_6</item>
+        <item>@array/gpu_7</item>
+        <item>@array/gpu_8</item>
+        <item>@array/gpu_9</item>
+        <item>@array/gpu_10</item>
+    </array>
 </resources>

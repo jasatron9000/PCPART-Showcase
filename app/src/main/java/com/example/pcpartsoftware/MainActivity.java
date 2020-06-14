@@ -188,7 +188,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ArrayList<ArrayList<Product>> listOfProductArray = new ArrayList<>();
 
         for (String cat : category){
-            listOfProductArray.add(new ArrayList<Product>(dp.getCat().returnListByCategory(cat)));
+            ArrayList<Product> limited = new ArrayList<>();
+            limited.add(dp.getCat().returnListByCategory(cat).get(0));
+            limited.add(dp.getCat().returnListByCategory(cat).get(1));
+            listOfProductArray.add(limited);
         }
         View v = this.findViewById(android.R.id.content);
 

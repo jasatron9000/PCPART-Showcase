@@ -276,4 +276,17 @@
             protection, and remote manageability.
         </item>
     </string-array>
+
+    <array name="cpu_list">
+        <item>@array/cpu1</item>
+        <item>@array/cpu2</item>
+        <item>@array/cpu3</item>
+        <item>@array/cpu4</item>
+        <item>@array/cpu5</item>
+        <item>@array/cpu6</item>
+        <item>@array/cpu7</item>
+        <item>@array/cpu8</item>
+        <item>@array/cpu9</item>
+        <item>@array/cpu10</item>
+    </array>
 </resources>

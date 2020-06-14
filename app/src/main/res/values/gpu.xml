@@ -1,2 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string-array name="gpu_1">
+        <item>AMD Radeon RX 5700</item>
+        <item>$599.94</item>
+        <item>5.0</item>
+        <item>\n - Memory Size: 8GB\n
+            - Base Clock Speed: 1465MHz\n
+            - Boost Clock Speed: 1725MHz\n
+            - Max Displays: 6\n
+            - Length: 270mm\n
+            - Display Ports: 3 \n\n</item>
+        <item>\n Great gaming experiences are created
+            by bending the rules. The AMD Radeon™ RX 5700
+            Series GPUs defy conventions with an all-new 7nm
+            process infused with RDNA architecture that is specifically tuned for
+            the perfect 1440p gaming experience. More efficient processing power handles
+            advanced 3D effects with ease, and 8GB of high-speed GDDR6 VRAM provides ample storage for the
+            detailed textures, meshes, and effects of modern games. Industry-leading software and
+            frequent driver upgrades push the experience even further, enabling overclocking,
+            gameplay recording, and more.\n\n\n </item>
+    </string-array>
+
+    <string-array name="gpu_2">
+        <item>Nvidia GeForce RTX 2080 Ti</item>
+        <item>$2149.95</item>
+        <item>5.0</item>
+        <item>"\n - Memory Size: 11GB\n
+            - Base Clock Speed: 1366MHz\n
+            - Boost Clock Speed: 1545MHz\n
+            - Max Displays: 4\n
+            - Length: 270mm\n
+            - Display Ports: 2 \n\n</item>
+        <item>\n Whether you\'re a PC gamer who has been waiting in the wings for a more powerful
+            graphics card or you truly believe in Nvidia\'s vision of a ray traced future, the
+            Nvidia RTX 2080 Ti is the new top dog in the world of graphics cards and a sound
+            investment for you.\n\n\n </item>
+    </string-array>
+
+    <string-array name="gpu_3">
+        <item>AMD Radeon RX 5600 XT</item>
+        <item>$573.89</item>
+        <item>3.5</item>
+        <item>"\n - Memory Size: 6GB\n
+            - Base Clock Speed: 1556MHz\n
+            - Boost Clock Speed: 1620MHz\n
+            - Max Displays: 4\n
+            - Length: 240mm\n
+            - Display Ports: 3 \n\n</item>
+        <item>\n Armed with the newest and most advanced 7nm AMD RDNA architecture,
+            PowerColor RX 5600 XT Red Dragon brings great performance with a dual 100mm fan and
+            5x6F copper heatpipes. It features optimized performance for better visuals such as
+            volumetric lighting, motion blurring effects, depth of field, and multi-level cache
+            hierarchy for reduced latency and a highly responsive gaming experience. PowerColor
+            RX 5600 XT Red Dragon is the excellent graphics card for 1080p users.\n\n\n </item>
+    </string-array>
+
+    <string-array name="gpu_4">
+        <item>Nvidia GeForce RTX 2070 Super</item>
+        <item>$1049.00</item>
+        <item>5.0</item>
+        <item>\n - Memory Size: 8GB\n
+            - Base Clock Speed: N/A\n
+            - Boost Clock Speed: 1785MHz\n
+            - Max Displays: 4\n
+            - Length: 289mm\n
+            - Display Ports: 3 \n\n</item>
+        <item>\n In terms of value, the 2070 Super is a great option for people looking to
+            build a high-end gaming PC. It places at the top of the charts for the FPS per
+            unit of money spent on a complete PC. If you\'re only looking at the graphics card,
+            however, the RTX cards—and really any high-end GPU—look far less enticing. Just
+            remember that value means many things, and even a free GTX 650 probably won\'t get
+            much attention from anyone looking to play the latest games. \n\n\n </item>
+    </string-array>
+
+    <string-array name="gpu_5">
+        <item>Nvidia GeForce GTX 1660 Super</item>
+        <item>$499.00</item>
+        <item>5.0</item>
+        <item>\n - Memory Size: 6GB\n
+            - Base Clock Speed: 1785MHz \n
+            - Boost Clock Speed: 1830MHz\n
+            - Max Displays: 4\n
+            - Length: 225mm\n
+            - Display Ports: 3 \n\n</item>
+        <item>\n If you\'re on the market for the best graphics card for 1080p gaming,
+            you\'re going to want the Nvidia GeForce GTX 1660 Super. The original GTX 1660
+            was already the best entry-level graphics card, and Nvidia basically made it better
+            in every single way. The Nvidia Super series has been kind of hit and miss – with
+            the RTX 2080 being a notable flop – but we can\'t recommend the GTX 1660 Super
+            enough. \n\n\n </item>
+    </string-array>
+
+
+    <string-array name="gpu_6">
+        <item>Nvidia GT 1030</item>
+        <item>$155.25</item>
+        <item>5.0</item>
+        <item>\n - Memory Size: 2GB\n
+            - Base Clock Speed: 1252MHz\n
+            - Boost Clock Speed: 1506MHz\n
+            - Max Displays: 2\n
+            - Length: 150mm\n
+            - Display Ports: None \n\n</item>
+        <item>\n Accelerate your entire PC experience with the fast, powerful
+            NVIDIA® GeForce® GT 1030 graphics card. Its award-winning NVIDIA Pascal™
+            architecture, powerful graphics engine, and state-of-the-art technologies
+            give you the performance upgrade you need to drive today’s most demanding
+            PC applications. \n\n\n </item>
+    </string-array>
+
+
+    <string-array name="gpu_7">
+        <item>Radeon RX 570</item>
+        <item>$240.35</item>
+        <item>4.5</item>
+        <item>\n - Memory Size: 4GB\n
+            - Base Clock Speed: Not Specified\n
+            - Boost Clock Speed: 1250MHz\n
+            - Max Displays: 5\n
+            - Length: 255mm\n
+            - Display Ports: 3 \n\n</item>
+        <item>\n It is based on AMD\'s latest GCN 4 architecture designed for GloFo
+            14nm FinFET that delivers premium VR capability, increased level of performance,
+            smooth VR, seamless support for next-gen gaming monitors and CPU-free game streaming
+            or recording. AMD FreeSync™ technology puts an end to choppy gameplay and broken
+            frames with fluid, artifact-free, performance at virtually any framerate.
+            A power-saving feature that dynamically regulates frame rate based on your in-game
+            movements. Radeon™ Chill can improve power efficiency and can lower temperatures
+            for supported products and games when enabled through Radeon™ Settings. \n\n\n </item>
+    </string-array>
+
+
+    <string-array name="gpu_8">
+        <item>Radeon RX 5500 XT</item>
+        <item>$424.35</item>
+        <item>5.0</item>
+        <item>\n - Memory Size: 8GB\n
+            - Base Clock Speed: 1607MHz\n
+            - Boost Clock Speed: 1845MHz\n
+            - Max Displays: 4\n
+            - Length: 233mm\n
+            - Display Ports: 3 \n\n</item>
+        <item>\n The AMD Radeon RX 5500 GPU powers high fidelity gaming for immersive action,
+            bringing realism to life. High-performance RDNA architecture was engineered to greatly
+            enhance features like Radeon Image Sharpening, FidelityFX, and premium VR technologies
+            for maximum performance and beautiful gaming experiences. Radeon RX 5500 XT features
+            new compute units, new instructions better suited for visual effects, and multi-level
+            cache hierarchy for greatly reduced latency and highly responsive gaming.
+            High-performance RDNA architecture was engineered to greatly enhance features like
+            Radeon Image Sharpening, FidelityFX, and VR technologies3 for maximum performance
+            and jaw-dropping gaming experiences. Get the competitive advantage with dramatically
+            reduced input lag with Radeon Anti-Lag, get stutter-free, tear-free gaming with AMD
+            Radeon FreeSync1 technology, and the latest Radeon Software for incredibly responsive
+            and insanely immersive gameplay. \n\n\n </item>
+    </string-array>
+
+
+    <string-array name="gpu_9">
+        <item>Nvidia GeForce GTX 1650</item>
+        <item>$343.85</item>
+        <item>5.0</item>
+        <item>\n - Memory Size: 4GB\n
+            - Base Clock Speed: 1515MHz\n
+            - Boost Clock Speed: 1785MHz\n
+            - Max Displays: 3\n
+            - Length: 200mm\n
+            - Display Ports: 1 \n\n</item>
+        <item>\n The GeForce® GTX 1650 is built with the breakthrough graphics
+            performance of the award-winning NVIDIA Turing™ architecture. Broadcast your
+            gameplay with the GTX 1650\'s dedicated hardware encoder that is optimized for
+            Open Broadcaster Software (OBS). GeForce Experience lets you capture and share
+            videos, screenshots, and livestreams with friends, keep GeForce drivers up to
+            date, and easily optimize your in-game settings. Space-grade lubricant brings
+            the durability of dual ball bearings to quieter sleeve bearing designs. IP5X dust
+            resistance offers protection from particle ingress for better durability. Auto-Extreme
+            Technology uses automation to enhance reliability. A protective backplate secures
+            components during transportation and installation. TUF Compatibility Testing ensures
+            TUF Gaming and TUF Gaming alliance components work together flawlessly. 144-Hour
+            Validation Program puts cards through a series of stringent tests to ensure
+            compatibility with the latest games. Tweak II provides intuitive performance tweaking,
+            thermal controls, and system monitoring\n\n\n </item>
+    </string-array>
+
+
+    <string-array name="gpu_10">
+        <item>Nvidia GeForce RTX 2070</item>
+        <item>$808.99</item>
+        <item>4.5</item>
+        <item>\n - Memory Size: 8GB\n
+            - Base Clock Speed: 1620MHz\n
+            - Boost Clock Speed: Not Specified\n
+            - Max Displays: 4\n
+            - Length: 264mm\n
+            - Display Ports: 3 \n\n</item>
+        <item>\n The Nvidia GeForce RTX 2070 Founders Edition packs futuristic hardware
+            for ray tracing and AI-enhanced graphics, but it\'s also faster than the competition
+            in traditional games. Nvidia\'s design is gorgeous, but similar performance can be
+            achieved with lower-priced RTX 2070 graphics cards. The RTX 2070 Founder’s Edition
+            is currently as close to a “value” proposition as you’re going to find with a
+            Turing-based card. If you’re using a 1440p monitor and looking for a future-proof GPU,
+            this card is a semi-affordable option with great looks and great performance. Still,
+            you should wait for partner cards to drop in the future, as they should offer equivalent
+            performance at a lower price.\n\n\n </item>
+    </string-array>
+</resources>

@@ -1,2 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string-array name="ram_1">
+        <item>G.Skill Trident Z RGB</item>
+        <item>$204.94</item>
+        <item>5.0</item>
+        <item>\n - Memory Type: DDR4\n
+            - Memory Capacity: 16GB (2 x 8GB)\n
+            - Memory Speed: 3200Mhz\n\n</item>
+        <item>\n Featuring a completely exposed light bar with vibrant RGB LEDs, merged with
+            the award-winning Trident Z heatspreader designed, and constructed with the highest
+            quality components, the Trident Z RGB DDR4 memory kit combines the most vivid RGB
+            lighting with uncompromised performance. The uncovered light bar is designed for visual
+            gratification in full RGB. The default lighting sports a fluid full spectrum rainbow
+            wave. Downloadable software allows expanded effect and color customizations to the
+            memory modules. Color match your build and rethink the possibilities with RGB. Each
+            memory kit contains specially screened ICs through G.SKILL\'s unparalleled selection
+            process and a custom engineered ten-layer PCB offering maximum signal stability; and
+            every single kit is rigorously tested for reliability, compatibility, and performance
+            across a wide range of motherboards. \n\n\n</item>
+    </string-array>
+
+    <string-array name="ram_2">
+        <item>Corsair Vengeance LPX Series</item>
+        <item>$124.00</item>
+        <item>5.0</item>
+        <item>\n - Memory Type: DDR4\n
+            - Memory Capacity: 8GB (2 x 4GB) \n
+            - Memory Speed: 2666Mhz\n\n</item>
+        <item>\n Vengeance LPX memory is designed for high-performance overclocking. The
+            heatspreader is made of pure aluminum for faster heat dissipation, and the
+            eight-layer PCB helps manage heat and provides superior overclocking headroom.
+            Each IC is individually screened for performance potential. The DDR4 form factor
+            is optimized for the latest Intel X99 and 100 Series motherboards and offers higher
+            frequencies, greater bandwidth, and lower power consumption than DDR3 modules.
+            Vengeance LPX DDR4 modules are compatibility-tested across X99 and 100 Series
+            motherboards for reliably fast performance. There\'s XMP 2.0 support for trouble-free
+            automatic overclocking. And, they\'re available in multiple colors to match your
+            motherboard, your components, or just your style.\n\n\n</item>
+    </string-array>
+
+    <string-array name="ram_3">
+        <item>G.Skill Ripjaws V</item>
+        <item>$154.94</item>
+        <item>5.0</item>
+        <item>\n - Memory Type: DDR4\n
+            - Memory Capacity: 16GB (2 x 8GB)\n
+            - Memory Speed: 3200Mhz\n\n</item>
+        <item>\n As the latest addition to the classic Ripjaws family, Ripjaws
+            V series is the newest dual-channel DDR4 memory designed for maximum
+            compatibility and cutting-edge performance with the 6th generation Intel®
+            Core™ processor on the Z170 series chipset. Built with the finest components,
+            tested under the most rigorous conditions, and offered in five color options,
+            Ripjaws V is the perfect choice for building a new performance system or for a
+            simple memory upgrade. Available in a wide range of frequency options from standard
+            DDR4-2133MHz to a blistering DDR4-3733MHz in dual channels, Ripjaws V lets you enjoy a
+            faster computing experience for gaming, video &amp; image editing, rendering, and data
+            processing. Each and every Ripjaws V DDR4 memory kit is tested with G.SKILL\'s rigorous
+            validation process on all major performance motherboard brands to ensure the
+            best-in-class reliability and compatibility across the widest selection of
+            motherboards.\n\n\n</item>
+    </string-array>
+
+    <string-array name="ram_4">
+        <item>PNY XLR8 Desktop Gaming</item>
+        <item>$90.85</item>
+        <item>4.0</item>
+        <item>\n - Memory Type: DDR4\n
+            - Memory Capacity: 8GB (1 x 8GB) \n
+            - Memory Speed: 2666Mhz \n\n</item>
+        <item>\n PNY\'s premium XLR8 memory features our most aggressive speeds,
+            highest bandwidth, lowest latency and power consumption, and most advanced
+            thermal performance for maximum PC stability and responsiveness during
+            memory-intensive gaming and application use. PNY XLR8 DDR4 memory modules
+            are rigorously engineered and tested to ensure peak performance in even the
+            most challenging gaming environments. \n\n\n</item>
+    </string-array>
+
+    <string-array name="ram_5">
+        <item>HyperX Predator DDR4</item>
+        <item>$212.00</item>
+        <item>5.0</item>
+        <item>\n - Memory Type: DDR4\n
+            - Memory Capacity: 16GB (2 x 8GB) \n
+            - Memory Speed: 3000Mhz\n\n</item>
+        <item>\n At elite levels of gaming, the margins between hunter and hunted are measured
+            in milliseconds, and powerful HyperX® Predator DDR4 can provide the boost that keeps
+            you atop the food chain1. Predator DDR4 comes decked out with a menacing black heat
+            spreader that will put fear into the hearts of your prey while running cool and
+            reliably. Furious speeds up to 4000MHz and CL12-CL19 timings will push those polygons,
+            deliver buttery-smooth streaming for your fans, and blaze through your highlight reel
+            editing. It\'s available in single module capacities of 8GB-16GB and kits of 2, 4, and
+            8 with capacities of 8GB-128GB. The Intel XMP-ready profiles are optimized for Intel\'s
+            latest chipsets - just select the profile and you\'re ready to dominate. Dependable
+            Predator DDR4 is 100-percent factory-tested at speed, complements both the newest AMD
+            and Intel platforms, and comes with a lifetime warranty, so you\'ll have extreme
+            performance and leave the worrying to whoever\'s about to try and take
+            you on. \n\n\n</item>
+    </string-array>
+
+    <string-array name="ram_6">
+        <item>G.SKILL Ripjaws 4 Series 16GB</item>
+        <item>$148.35</item>
+        <item>4.0</item>
+        <item>\n - Memory Type: DDR4\n
+            - Memory Capacity: 16GB (2 x 8GB) \n
+            - Memory Speed: 2400Mhz\n\n</item>
+        <item>\n G.SKILL Ripjaws 4 series performance DDR4 memory is designed for the
+            ultimate experience on the latest Intel X99 platform! Whether you are processing
+            large amounts of data or intense gaming, experience smooth system performance with
+            the newest next-generation PC memory technology! All Ripjaws 4 memory kits are
+            tested with G.SKILL\'s extensive suite of testing software to ensure maximum performance
+            and stability. Make Ripjaws 4 the ideal choice for your DDR4 system! Ripjaws 4 series
+            DDR4 memory are validated for compatibility with most X99 motherboards under a series
+            of rigorous tests in quad channel memory operations. It\'s guaranteed to provide the
+            best-in-class performance, compatibility, and stability with the widest range of X99
+            motherboards.\n\n\n</item>
+    </string-array>
+
+    <string-array name="ram_7">
+        <item>HyperX FURY 16GB Kit</item>
+        <item>$168.99</item>
+        <item>5.0</item>
+        <item>\n - Memory Type: DDR4\n
+            - Memory Capacity: 16GB (2 x 8GB) \n
+            - Memory Speed: 3200Mhz\n\n</item>
+        <item>\n HyperX HX432C16FB3K2/16 is a kit of two 1G x 64-bit (8GB) DDR4-3200 CL16 SDRAM
+            (Synchronous DRAM) 1Rx8, memory module, based on eight 1G x 8-bit FBGA components per
+            module. Each module kit supports Intel® Extreme Memory Profiles (Intel® XMP) 2.0.
+            Total kit capacity is 16GB. Each module has been tested to run at DDR4-3200 at a low
+            latency timing of 16-18-18 at 1.35V. The SPDs are programmed to JEDEC standard latency
+            DDR4-2400 timing of 17-17-17 at 1.2V. Each 288-pin DIMM uses gold contact
+            fingers.\n\n\n</item>
+    </string-array>
+
+    <string-array name="ram_8">
+        <item>Crucial 16GB Kit</item>
+        <item>$132.25</item>
+        <item>5.0</item>
+        <item>\n - Memory Type: DDR4\n
+            - Memory Capacity: 16GB (1 x 16GB) \n
+            - Memory Speed: 2666Mhz\n\n</item>
+        <item>\n In the ever-changing world of technology, any component more than five years
+            old is usually in need of an update. At seven years old and counting, that\'s where
+            DDR3 memory is at: laptops can only do so much with it. Since the introduction of
+            DDR3 memory technology in 2007, processors have doubled in capability, SSDs have
+            revolutionized throughput, and graphics cards have drastically increased frame rates,
+            leaving memory as a limiting factor. With Crucial DDR4 SODIMMs, crush the DDR3 memory
+            bottleneck and unlock a new standard of performance.\n\n\n</item>
+    </string-array>
+
+    <string-array name="ram_9">
+        <item>Corsair Vengeance Pro 16GB</item>
+        <item>$199.00</item>
+        <item>5.0</item>
+        <item>\n - Memory Type: DDR4\n
+            - Memory Capacity: 16GB (2 x 8GB)\n
+            - Memory Speed: 2666Mhz\n\n</item>
+        <item>\n VENGEANCE RGB PRO Series DDR4 overclocked memory lights up your PC
+            with mesmerizing dynamic multi-zone RGB lighting, while delivering the best in
+            DDR4 performance. Powerful CORSAIR iCUE software brings your system to life with
+            dynamic RGB lighting control, synchronized across all your iCUE compatible products,
+            including memory, fans, RGB LED light strips, keyboards, mice and more. Customize
+            dozens of preset lighting profiles, experiment with a huge variety of user adjustable
+            colors and adjust LED brightness to perfectly match your system. Optimized for peak
+            performance on the latest Intel and AMD DDR4 motherboards. \n\n\n</item>
+    </string-array>
+
+    <string-array name="ram_10">
+        <item>Corsair Dominator Platinum 16GB</item>
+        <item>$348.99</item>
+        <item>5.0</item>
+        <item>\n - Memory Type: DDR4\n
+            - Memory Capacity: 16GB (2 x 8GB)\n
+            - Memory Speed: 3600Mhz\n\n</item>
+        <item>\n Corsair Dominator® Platinum RGB DDR4 Memory redefines premium DDR4 memory,
+            with superior aluminum craftsmanship, tightly screened high-frequency memory chips
+            and 12 ultra-bright, individually addressable Capellix RGB LEDs. Corsair Dominator
+            has long been the face of premium, high-performance memory. That heritage and experience
+            has led to this: the most advanced DDR4 memory we\'ve ever created. Dominator Platinum
+            RGB is available in high-performance speeds of up to 4,800MHz - making it the world\'s
+            fastest air-cooled production memory - with generous overclocking headroom to push
+            performance even higher.\n\n\n</item>
+    </string-array>
+
+</resources>

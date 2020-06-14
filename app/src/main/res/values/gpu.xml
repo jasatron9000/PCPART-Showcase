@@ -204,6 +204,67 @@
             performance at a lower price.\n\n\n </item>
     </string-array>
 
+
+    <array name="gpu_1_img">
+        <item>@drawable/gpu_1_1</item>
+        <item>@drawable/gpu_1_2</item>
+        <item>@drawable/gpu_1_3</item>
+    </array>
+
+    <array name="gpu_2_img">
+        <item>@drawable/gpu_2_1</item>
+        <item>@drawable/gpu_2_2</item>
+        <item>@drawable/gpu_2_3</item>
+    </array>
+
+    <array name="gpu_3_img">
+        <item>@drawable/gpu_3_1</item>
+        <item>@drawable/gpu_3_2</item>
+        <item>@drawable/gpu_3_3</item>
+    </array>
+
+    <array name="gpu_4_img">
+        <item>@drawable/gpu_4_1</item>
+        <item>@drawable/gpu_4_2</item>
+        <item>@drawable/gpu_4_3</item>
+    </array>
+
+    <array name="gpu_5_img">
+        <item>@drawable/gpu_5_1</item>
+        <item>@drawable/gpu_5_2</item>
+        <item>@drawable/gpu_5_3</item>
+    </array>
+
+    <array name="gpu_6_img">
+        <item>@drawable/gpu_6_1</item>
+        <item>@drawable/gpu_6_2</item>
+        <item>@drawable/gpu_6_3</item>
+    </array>
+
+    <array name="cpu_7_img">
+        <item>@drawable/gpu_8_1</item>
+        <item>@drawable/gpu_8_2</item>
+        <item>@drawable/gpu_8_3</item>
+    </array>
+
+    <array name="gpu_8_img">
+        <item>@drawable/gpu_9_1</item>
+        <item>@drawable/gpu_9_2</item>
+        <item>@drawable/gpu_9_3</item>
+    </array>
+
+    <array name="gpu_9_img">
+        <item>@drawable/gpu_9_1</item>
+        <item>@drawable/gpu_9_2</item>
+        <item>@drawable/gpu_9_3</item>
+    </array>
+
+    <array name="gpu_10_img">
+        <item>@drawable/gpu_10_1</item>
+        <item>@drawable/gpu_10_2</item>
+        <item>@drawable/gpu_10_3</item>
+    </array>
+    
     <array name="gpu_list">
         <item>@array/gpu_1</item>
         <item>@array/gpu_2</item>
@@ -216,4 +277,5 @@
         <item>@array/gpu_9</item>
         <item>@array/gpu_10</item>
     </array>
+    
 </resources>

@@ -85,6 +85,7 @@ public class DataProvider {
                         cImg, current[3], current[4]);
 
                 Log.i("DATA LOAD", Category + ", " + current[0]);
+
             }
             else{
                 Log.i("DATA LOAD", "Failed To Load");

@@ -1,3 +1,279 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="cpu1">
+        <item>AMD Ryzen 9 3900X</item>
+        <item>$825.00</item>
+        <item>4.74</item>
+        <item>
+            # of Cores : 12\n
+            # of Threads : 24\n
+            Base Clock 3.8 GHz\n
+            Max Boost Clock 4.6 GHz\n
+            CPU Socket: AMD AM4\n
+            Default TDP/ TDP : 105W\n
+
+        </item>
+        <item>
+            Higher speeds. More memory. Wider bandwidth. You must push every lever, squeeze every
+            ounce, and leave nothing on the table. AMD\'s 3rd Gen Ryzen processor was designed to
+            break expectations and set a new standard for high-performance processors.\n
+            \n
+            The 3rd Gen AMD Ryzen processor is built using the world\'s most advanced manufacturing
+            technology to deliver winning performance while keeping your system astonishingly cool
+            &amp; quiet.\n
+            \n
+            3rd Gen Ryzen processors feature support for the world\'s first PCIe 4.0 ready platform2,
+            enabling the most advanced motherboards, graphics, and storage technologies available.
+        </item>
+    </string-array>
+
+    <string-array name="cpu2">
+        <item>AMD Ryzen 5 3600</item>
+        <item>$343.85</item>
+        <item>5.0</item>
+        <item>
+            # of Cores : 6\n
+            # of Threads :12\n
+            Base Clock 3.6 GHz\n
+            Max Boost Clock 4.2 GHz\n
+            CPU Socket: AMD AM4\n
+            Default TDP/ TDP : 65W\n
+        </item>
+        <item>
+            Elite caliber experiences on competitive titles. Simultaneous play and capture from one
+            powerful system. Experience smooth &amp; responsive cutting-edge VR content. Power and
+            performance for developers and enthusiasts alike. AMD\'s mainstream computing platform,
+            updated with the new PCIe® 4.0 Ready X570 based chipset. Software that combines the
+            speed of your SSD with the capacity of your hard disk into a single, fast,
+            easy-to-manage drive. With AMD SenseMI technology, Ryzen™ processors use true machine
+            intelligence to accelerate performance. The Simple and Powerful Overclocking Utility for
+            AMD Ryzen™ processors. AMD Ryzen™ 5 Processors are available in two options: with
+            powerful built-in Radeon™ Vega graphics, or without built-in graphics for users who
+            want to use a discrete graphics card.
+        </item>
+    </string-array>
+
+    <string-array name="cpu3">
+        <item>AMD Ryzen Threadripper 3990X</item>
+        <item>$7358.85</item>
+        <item>4.5</item>
+        <item>
+            # of Cores : 64\n
+            # of Threads : 128\n
+            Base Clock 2.9 GHz\n
+            Max Boost Clock Up to 4.3 GHz\n
+            CPU Socket: AMD sTRX4\n
+            Default TDP/ TDP : 280W\n
+        </item>
+        <item>
+            64 cores provide an astonishing 128 threads of simultaneous multi-processing power,
+            while 288MB of combined cache and vast I/O from the enthusiast-grade AMD TRX40
+            platform work together to deliver incredible performance.\n
+            \n
+            \n\t- 64 cores and 128 threads for lightning-fast rendering workloads.
+            \n\t- An unprecedented 88 total PCIe® 4.0 lanes to meet large GPU and NVMe needs.
+            \n\t- Up to 288MB of combined cache for rapid access to large data sets.
+            \n\t- Quad-channel DDR4 with available ECC support for reliable throughput
+            \n
+            \nThe new AMD TRX40 motherboards feature the debut of advanced PCIe® 4.0 connectivity
+            on high-end desktop, delivering more bandwidth for creators than ever before. Combine
+            up to six NVMe disks in for superlative speed or rock-solid redundancy with
+            Ryzen Threadripper processors. Want even more? Get double the bandwidth with PCIe 4.0,
+            exclusively for high-end desktop on AMD TRX40 motherboards.
+        </item>
+    </string-array>
+
+    <string-array name="cpu4">
+        <item>AMD Ryzen Threadripper 3970X</item>
+        <item>$3678.85</item>
+        <item>4.7</item>
+        <item>
+            # of Cores : 32\n
+            # of Threads : 64\n
+            Base Clock 3.7 GHz\n
+            Max Boost Clock 4.5 GHz\n
+            CPU Socket: AMD sTRX4\n
+            Default TDP/ TDP : NA\n
+        </item>
+        <item>
+            Do everything, all at the same time. Render. Stream. Compile. Encode. Work and Play.
+            It\'s the ultimate desktop platform for creators, featuring the world\'s most powerful
+            desktop processors.\n
+            \n
+            Take advantage of all 32 cores and 64 threads for unprecedented multitasking power to
+            edit footage, animate characters, and fine tune a design without sacrificing your vision.\n
+            \n
+            Experience incredible performance with a massive amount of on-chip memory, powerful
+            enough to simultaneously stream your game content to your audience, without skipping
+            frames; strong enough to handle your creative vision in three dimensions; and fast
+            enough to compile your code while you play.\n
+            \n
+            Coupled with the new AMD TRX40 desktop platform, 3rd Gen AMD Ryzen Threadripper
+            processors deliver bleeding-edge efficiency and expandability - including next-gen
+            PCIe 4.0 connectivity.\n
+            \n
+        </item>
+    </string-array>
+
+    <string-array name="cpu5">
+        <item>AMD Ryzen 9 3900X</item>
+        <item>$825.00</item>
+        <item>4.74</item>
+        <item>
+            # of Cores : 12\n
+            # of Threads : 24\n
+            Base Clock 3.8 GHz\n
+            Max Boost Clock 4.6 GHz\n
+            CPU Socket: AMD AM4\n
+            Default TDP/ TDP : 105W\n
+
+        </item>
+        <item>
+            Higher speeds. More memory. Wider bandwidth. You must push every lever, squeeze every
+            ounce, and leave nothing on the table. AMD\'s 3rd Gen Ryzen™ processor was designed to
+            break expectations and set a new standard for high-performance processors.\n
+            \n
+            The 3rd Gen AMD Ryzen processor is built using the world\'s most advanced manufacturing
+            technology to deliver winning performance while keeping your system astonishingly cool
+            &amp; quiet.\n
+            \n
+            3rd Gen Ryzen processors feature support for the world\'s first PCIe 4.0 ready platform2,
+            enabling the most advanced motherboards, graphics, and storage technologies available.
+        </item>
+    </string-array>
+
+    <string-array name="cpu6">
+        <item>Intel Coffee Lake Core i9 9900K</item>
+        <item>$889.00</item>
+        <item>4.5</item>
+        <item>
+            # of Cores : 8\n
+            # of Threads :  16\n
+            Base Clock 3.6GHz\n
+            Max Boost Clock 5.0GHz\n
+            CPU Socket: Intel LGA1151\n
+            Default TDP/ TDP :95 W\n
+
+        </item>
+        <item>
+            9th Gen Intel Core i9-9900K desktop processor with Intel Turbo Boost Technology 2.0
+            offers powerful performance for gaming, creating and productivity. Thermal solution
+            NOT included in the box.\n
+            \n
+            \n\t- 8 Cores / 16 Threads
+            \n\t- 3.60 GHz up to 5.00 GHz / 16 MB Cache
+            \n\t- Compatible only with Motherboards based on Intel 300 Series Chipsets
+            \n\t- Intel Optane Memory Supported
+            \n\t- Intel UHD Graphics 630
+        </item>
+    </string-array>
+
+    <string-array name="cpu7">
+        <item>Intel Coffee Lake Core i5 9400F</item>
+        <item>$264.99</item>
+        <item>5.0</item>
+        <item>
+           # of Cores : 6\n
+            # of Threads : 6\n
+            Base Clock 2.90 GHz\n
+            Max Boost Clock4.10 GHz\n
+            CPU Socket: Intel LGA1151\n
+            Default TDP/ TDP : 65W\n
+
+        </item>
+        <item>
+            Now everyday computer tasks can happen faster. Edit photos and videos seamlessly.
+            between programs and windows quickly.\n
+            \n
+            High processing throughput and improved performance. 9MB integrated cache in the CPU
+            which provides fast access to heavily used data and instructions.Intel Identity
+            Protection Technology included in the device which provides a simple and secure
+            technology for protecting access to customer and business data from threats and fraud.
+            Additionally, it contains the Intel Turbo Boost Technology which dynamically increases
+            the processor\'s frequency as needed by taking advantage of thermal and power headroom to
+            give you a burst of speed when you need it, and increased energy efficiency when
+            you don\'t.
+
+        </item>
+    </string-array>
+
+    <string-array name="cpu8">
+        <item>Intel Coffee Lake Core i7 9700</item>
+        <item>$595.00</item>
+        <item>5.0</item>
+        <item>
+            # of Cores : 8\n
+            # of Threads : 8\n
+            Base Clock 3GHz\n
+            Max Boost Clock 4.7GHz\n
+            CPU Socket: Intel LGA1151\n
+            Default TDP/ TDP : 65 W\n
+
+        </item>
+        <item>
+            Higher speeds. More memory. Wider bandwidth. You must push every lever, squeeze every
+            ounce, and leave nothing on the table. AMD\'s 3rd Gen Ryzen™ processor was designed to
+            break expectations and set a new standard for high-performance processors.\n
+            \n
+            The 3rd Gen AMD Ryzen processor is built using the world\'s most advanced manufacturing
+            technology to deliver winning performance while keeping your system astonishingly cool
+            &amp; quiet.\n
+            \n
+            3rd Gen Ryzen processors feature support for the world\'s first PCIe 4.0 ready platform2,
+            enabling the most advanced motherboards, graphics, and storage technologies available.
+        </item>
+    </string-array>
+
+    <string-array name="cpu9">
+        <item>Intel Coffee Lake Core i3 9100</item>
+        <item>$214.99</item>
+        <item>4.2</item>
+        <item>
+            # of Cores : 4\n
+            # of Threads : 4\n
+            Base Clock 3.60 GHz\n
+            Max Boost Clock 4.20 GHz\n
+            CPU Socket: Intel LGA1151\n
+            Default TDP/ TDP : 65 W\n
+
+        </item>
+        <item>
+            Experience powerful performance and seamless computing for your everyday tasks.
+            Packed with quad computing cores (quad threads), the Core i3-9100 powers through
+            your day-to-day workloads like office tasks, media streaming, HD entertainment and more.
+            Plus, Intel UHD Graphics 630 delivers decent graphics performance to meet your average
+            needs.\n
+            \n
+            Amazing performance at a budget-friendly price. What will be more amazing is what
+            you can do with the Intel Core i3-9100 processor.
+        </item>
+    </string-array>
+
+    <string-array name="cpu10">
+        <item>Intel Xeon W-2195</item>
+        <item>$4488 99</item>
+        <item>3.5</item>
+        <item>
+            # of Cores :18\n
+            # of Threads : 36\n
+            Base Clock 2.3GHz\n
+            Max Boost Clock 4.3GHz\n
+            CPU Socket: Intel LGA2066\n
+            Default TDP/ TDP : 140 W\n
+
+        </item>
+        <item>
+            Up to 18 cores and 36 threads with up to 4.5 GHz Intel® Turbo Boost Technology
+            2.0 frequency, combined with up to 512 GB DDR4 ECC 2666 MHz memory support
+            delivering rapid workload loading and processing.\n
+            \n
+            Up to 48 lanes of PCI Express 3.0 for graphics, storage and network expandability.
+            Enhanced media performance with Intel® Virtual RAID on Chip (Intel® VROC)
+            combining RAID with NVMe drives directly off the CPU.\n
+            \n
+            Built-in reliability, availability and serviceability to ensure platform and data
+            integrity. Intel® vPro™ technology delivers hardware-enhanced security,
+            protection, and remote manageability.
+        </item>
+    </string-array>
 </resources>
